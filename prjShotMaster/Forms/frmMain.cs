@@ -23,14 +23,12 @@ namespace prjShotMaster
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
-            // TEST MODE
-            pnlDestinationFolderDefault.Enabled = false;
-            // /TEST MODE
+            // hide
+            Visible = false;
             // Start
             actionManager.Start();
             // on start
             actionManager.Shot();
-            Visible = false;
         }
 
         private void InterceptKeys_KeyUp(Keys Key)
@@ -70,7 +68,7 @@ namespace prjShotMaster
             }
         }
 
-        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitApp(object sender, EventArgs e)
         {
             b_minimize_on_close = false;
             Close();
@@ -82,61 +80,39 @@ namespace prjShotMaster
             Show();
         }
 
-        private void btnApplyDefault_Click(object sender, EventArgs e)
+        private void openDestFolder(object sender, EventArgs e)
         {
-            applySettingsDefault();
+            string path = Properties.Settings.Default.DestinationFolder;
+            // если путь относительный (без ":"), считаем, что относительно Рабочего стола текущего пользователя
+            if (path.IndexOf(':') < 0)
+            {
+                // f.e., C:\Users\Username\Desktop
+                path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
+            }
+            System.Diagnostics.Process.Start(path);
         }
 
-        private void applySettingsDefault()
+        private void pauseStart(object sender, EventArgs e)
         {
-            Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
-            Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
+            // 
+        }
+
+        private void applySettingsDefault(object sender, EventArgs e)
+        {
             Properties.Settings.Default.DestinationFolder = tbDestinationFolderDefault.Text;
+            Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
+            Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
             Properties.Settings.Default.Save();
 
+            actionManager.updateSettings();
             fillSettingsControls();
         }
 
         private void fillSettingsControls()
         {
-            // lbDeviceIndex
-            foreach (System.Collections.DictionaryEntry actionEntry in actionManager.actionList)
-            {
-                CShotAction action = (actionEntry.Value as CShotAction);
-                Control lbDeviceIndex = findControlByName("lbDeviceIndex" + action.action_code);
-                (lbDeviceIndex as ListBox).Items.Clear();
-                foreach (string str in action.DeviceList)
-                {
-                    (lbDeviceIndex as ListBox).Items.Add(str);
-                }
-            }
-            // show current settings values
-            fillSettingsControlsState();
-        }
-
-        private void fillSettingsControlsState()
-        {
             tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
             tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
             cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
-        }
-
-        private Control findControlByName(string name)
-        {
-            foreach (Control control in this.Controls.Find(name, true))
-            {
-                if (control.Name == name)
-                {
-                    return control;
-                }
-            }
-            return null;
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            b_minimize_on_close = false;
-            Close();
         }
     }
 }

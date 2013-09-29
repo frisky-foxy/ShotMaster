@@ -21,10 +21,10 @@
       <Value Profile="(Default)">res\sound\shot.wav</Value>
     </Setting>
     <Setting Name="DestinationFolderS" Type="System.String" Scope="User">
-      <Value Profile="(Default)">\Desktop\_shotmaster</Value>
+      <Value Profile="(Default)">\_shotmaster</Value>
     </Setting>
     <Setting Name="DestinationFolderW" Type="System.String" Scope="User">
-      <Value Profile="(Default)">\Desktop\_shotmaster</Value>
+      <Value Profile="(Default)">\_shotmaster</Value>
     </Setting>
     <Setting Name="FileFormatS" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>

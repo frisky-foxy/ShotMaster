@@ -14,6 +14,7 @@ namespace prjShotMaster
     public partial class frmMain : Form
     {
         public CActionManager actionManager = new CActionManager();
+        private bool b_minimize_on_close = true;
 
         public frmMain()
         {
@@ -22,9 +23,18 @@ namespace prjShotMaster
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
-
-            // test
+            // TEST MODE
             pnlSettingsDefault.Enabled = false;
+            // Start
+            //actionManager.Start();
+            // on start
+            actionManager.do_action();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            Visible = false;
+            ShowInTaskbar = false;
         }
 
         private void InterceptKeys_KeyUp(Keys Key)
@@ -42,6 +52,7 @@ namespace prjShotMaster
                 && PressedKeys.Contains(Keys.K)
             )
             {
+                actionManager.do_action();
                 ntfIcn.ShowBalloonTip(100, "prjShotMaster", "Test CInterceptKeys", ToolTipIcon.Info);
             }
         }
@@ -90,6 +101,34 @@ namespace prjShotMaster
                 }
             }
             return null;
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (b_minimize_on_close)
+            {
+                e.Cancel = true;
+                WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                // on exit
+                actionManager.do_action();
+                // UnHook
+                CInterceptKeys.UnHook();
+            }
+        }
+
+        private void ntfIcn_DoubleClick(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+            Show();
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            b_minimize_on_close = false;
+            Close();
         }
     }
 }

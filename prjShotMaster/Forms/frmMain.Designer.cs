@@ -60,6 +60,7 @@
             this.item1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.od = new System.Windows.Forms.OpenFileDialog();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -67,6 +68,7 @@
             this.pnlJpegQualityDefault.SuspendLayout();
             this.pnlSoundLocationDefault.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.cmsNotify.SuspendLayout();
             this.msMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -230,6 +232,8 @@
             // 
             // cmsNotify
             // 
+            this.cmsNotify.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.closeToolStripMenuItem});
             this.cmsNotify.Name = "contextMenuStrip1";
             resources.ApplyResources(this.cmsNotify, "cmsNotify");
             // 
@@ -253,6 +257,13 @@
             // 
             this.ntfIcn.ContextMenuStrip = this.cmsNotify;
             resources.ApplyResources(this.ntfIcn, "ntfIcn");
+            this.ntfIcn.DoubleClick += new System.EventHandler(this.ntfIcn_DoubleClick);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -262,6 +273,8 @@
             this.Controls.Add(this.pnlSettingsDefault);
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlSettingsDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.PerformLayout();
@@ -275,6 +288,7 @@
             this.pnlSoundLocationDefault.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.cmsNotify.ResumeLayout(false);
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -314,6 +328,7 @@
         private System.Windows.Forms.ToolStripMenuItem item1ToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog od;
         private System.Windows.Forms.NotifyIcon ntfIcn;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
     }
 }
 

@@ -6938,7 +6938,7 @@
 </value>
   </data>
   <data name="ntfIcn.Text" xml:space="preserve">
-    <value>notifyIcon1</value>
+    <value>Double click to shoe Settings form</value>
   </data>
   <data name="ntfIcn.Visible" type="System.Boolean, mscorlib">
     <value>True</value>

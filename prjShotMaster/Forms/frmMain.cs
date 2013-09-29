@@ -12,6 +12,8 @@ namespace prjShotMaster
 {
     public partial class frmMain : Form
     {
+        // public CActionManager actionManager = new CActionManager();
+
         public frmMain()
         {
             InitializeComponent();

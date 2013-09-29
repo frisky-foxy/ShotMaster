@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace prjShotMonitor.Actions
+namespace prjShotMaster.Actions
 {
     public class CShotAction
     {

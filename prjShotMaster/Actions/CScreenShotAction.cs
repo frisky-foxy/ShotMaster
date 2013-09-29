@@ -3,7 +3,7 @@ using System.Windows.Forms; // Screen
 using System.Drawing; // Bitmap, CopyPixelOperation
 using System.Drawing.Imaging; // PixelFormat
 
-namespace prjShotMonitor.Actions
+namespace prjShotMaster.Actions
 {
     class CScreenShotAction : CShotAction
     {

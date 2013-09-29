@@ -3,7 +3,7 @@ using System.Drawing; // Bitmap
 using AForge.Video;
 using AForge.Video.DirectShow;
 
-namespace prjShotMonitor.Actions
+namespace prjShotMaster.Actions
 {
     class CWebcamShotAction : CShotAction
     {

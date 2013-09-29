@@ -2,7 +2,7 @@
 using System.Drawing; // Bitmap
 using System.Text.RegularExpressions; // Regexp
 
-namespace prjShotMonitor.Actions
+namespace prjShotMaster.Actions
 {
     public class CShotResult
     {

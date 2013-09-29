@@ -25,10 +25,6 @@ namespace prjShotMaster
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
             // TEST MODE
             pnlDestinationFolderDefault.Enabled = false;
-            pnlSoundLocationDefault.Enabled = false;
-            pnlJpegQualityDefault.Enabled = false;
-            lbDeviceIndexS.Enabled = false;
-            lbDeviceIndexW.Enabled = false;
             // /TEST MODE
             // Start
             actionManager.Start();
@@ -94,14 +90,8 @@ namespace prjShotMaster
         private void applySettingsDefault()
         {
             Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
-            Properties.Settings.Default.SoundLocation = tbSoundLocationDefault.Text;
             Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
             Properties.Settings.Default.DestinationFolder = tbDestinationFolderDefault.Text;
-            Properties.Settings.Default.FileFormat = (byte)cbFileFormatDefault.SelectedIndex;
-            Properties.Settings.Default.JpegQuality = Convert.ToByte(tbJpegQualityDefault.Text);
-            // multiselect:
-            // Properties.Settings.Default.DeviceIndexW = lbDeviceIndexW.SelectedIndex;
-            // Properties.Settings.Default.DeviceIndexS = lbDeviceIndexS.SelectedIndex;
             Properties.Settings.Default.Save();
 
             fillSettingsControls();
@@ -120,10 +110,6 @@ namespace prjShotMaster
                     (lbDeviceIndex as ListBox).Items.Add(str);
                 }
             }
-            // cbFileFormat
-            cbFileFormatDefault.Items.Clear();
-            cbFileFormatDefault.Items.Add(CShotActionSettings.IT_EXT_JPG);
-            cbFileFormatDefault.Items.Add(CShotActionSettings.IT_EXT_PNG);
             // show current settings values
             fillSettingsControlsState();
         }
@@ -132,13 +118,7 @@ namespace prjShotMaster
         {
             tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
             tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
-            cbFileFormatDefault.SelectedIndex = Properties.Settings.Default.FileFormat;
-            tbJpegQualityDefault.Text = Properties.Settings.Default.JpegQuality.ToString();
             cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
-            tbSoundLocationDefault.Text = Properties.Settings.Default.SoundLocation;
-
-            pnlJpegQualityDefault.Enabled = (cbFileFormatDefault.SelectedIndex == CShotActionSettings.IT_JPG);
-            // pnlSoundLocationDefault.Enabled = cbPlaySoundDefault.Checked;
         }
 
         private Control findControlByName(string name)
@@ -151,6 +131,12 @@ namespace prjShotMaster
                 }
             }
             return null;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            b_minimize_on_close = false;
+            Close();
         }
     }
 }

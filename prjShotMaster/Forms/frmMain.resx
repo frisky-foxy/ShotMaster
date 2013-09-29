@@ -117,55 +117,109 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lbDeviceIndexW.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;pnlPlaySoundDefault.Name" xml:space="preserve">
+    <value>pnlPlaySoundDefault</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbDeviceIndexW.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 332</value>
+  <data name="&gt;&gt;pnlPlaySoundDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbDeviceIndexW.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 84</value>
-  </data>
-  <data name="lbDeviceIndexW.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;lbDeviceIndexW.Name" xml:space="preserve">
-    <value>lbDeviceIndexW</value>
-  </data>
-  <data name="&gt;&gt;lbDeviceIndexW.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbDeviceIndexW.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnlPlaySoundDefault.Parent" xml:space="preserve">
     <value>pnlSettingsDefault</value>
   </data>
-  <data name="&gt;&gt;lbDeviceIndexW.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnlPlaySoundDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lbDeviceIndexS.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Name" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
   </data>
-  <data name="lbDeviceIndexS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 242</value>
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbDeviceIndexS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 84</value>
-  </data>
-  <data name="lbDeviceIndexS.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lbDeviceIndexS.Name" xml:space="preserve">
-    <value>lbDeviceIndexS</value>
-  </data>
-  <data name="&gt;&gt;lbDeviceIndexS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbDeviceIndexS.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Parent" xml:space="preserve">
     <value>pnlSettingsDefault</value>
   </data>
-  <data name="&gt;&gt;lbDeviceIndexS.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnlTimerIntervalDefault.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Name" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlSettingsDefault</value>
+  </data>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnApplyDefault.Name" xml:space="preserve">
+    <value>btnApplyDefault</value>
+  </data>
+  <data name="&gt;&gt;btnApplyDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnApplyDefault.Parent" xml:space="preserve">
+    <value>pnlSettingsDefault</value>
+  </data>
+  <data name="&gt;&gt;btnApplyDefault.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlSettingsDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 31</value>
+  </data>
+  <data name="pnlSettingsDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>537, 154</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlSettingsDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlSettingsDefault.Name" xml:space="preserve">
+    <value>pnlSettingsDefault</value>
+  </data>
+  <data name="&gt;&gt;pnlSettingsDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSettingsDefault.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlSettingsDefault.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.Name" xml:space="preserve">
+    <value>cbPlaySoundDefault</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.Parent" xml:space="preserve">
+    <value>pnlPlaySoundDefault</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlPlaySoundDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 81</value>
+  </data>
+  <data name="pnlPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 32</value>
+  </data>
+  <data name="pnlPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;pnlPlaySoundDefault.Name" xml:space="preserve">
+    <value>pnlPlaySoundDefault</value>
+  </data>
+  <data name="&gt;&gt;pnlPlaySoundDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlPlaySoundDefault.Parent" xml:space="preserve">
+    <value>pnlSettingsDefault</value>
+  </data>
+  <data name="&gt;&gt;pnlPlaySoundDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cbPlaySoundDefault.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -198,26 +252,62 @@
   <data name="&gt;&gt;cbPlaySoundDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnlPlaySoundDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 166</value>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Name" xml:space="preserve">
+    <value>lblTimerIntervalDefault1</value>
   </data>
-  <data name="pnlPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Parent" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.Name" xml:space="preserve">
+    <value>lblTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.Parent" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.Name" xml:space="preserve">
+    <value>tbTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.Parent" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 43</value>
+  </data>
+  <data name="pnlTimerIntervalDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>525, 32</value>
   </data>
-  <data name="pnlPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="pnlTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;pnlPlaySoundDefault.Name" xml:space="preserve">
-    <value>pnlPlaySoundDefault</value>
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Name" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
   </data>
-  <data name="&gt;&gt;pnlPlaySoundDefault.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnlPlaySoundDefault.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Parent" xml:space="preserve">
     <value>pnlSettingsDefault</value>
   </data>
-  <data name="&gt;&gt;pnlPlaySoundDefault.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;pnlTimerIntervalDefault.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblTimerIntervalDefault1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -294,284 +384,62 @@
   <data name="&gt;&gt;tbTimerIntervalDefault.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pnlTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 43</value>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.Name" xml:space="preserve">
+    <value>btntbDestinationFolderDefault</value>
   </data>
-  <data name="pnlTimerIntervalDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 32</value>
-  </data>
-  <data name="pnlTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;pnlTimerIntervalDefault.Name" xml:space="preserve">
-    <value>pnlTimerIntervalDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlTimerIntervalDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlTimerIntervalDefault.Parent" xml:space="preserve">
-    <value>pnlSettingsDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlTimerIntervalDefault.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblFileFormatDefault.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFileFormatDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 7</value>
-  </data>
-  <data name="lblFileFormatDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 17</value>
-  </data>
-  <data name="lblFileFormatDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblFileFormatDefault.Text" xml:space="preserve">
-    <value>File format</value>
-  </data>
-  <data name="&gt;&gt;lblFileFormatDefault.Name" xml:space="preserve">
-    <value>lblFileFormatDefault</value>
-  </data>
-  <data name="&gt;&gt;lblFileFormatDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFileFormatDefault.Parent" xml:space="preserve">
-    <value>pnlFileFormatDefault</value>
-  </data>
-  <data name="&gt;&gt;lblFileFormatDefault.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbFileFormatDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 4</value>
-  </data>
-  <data name="cbFileFormatDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 24</value>
-  </data>
-  <data name="cbFileFormatDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cbFileFormatDefault.Name" xml:space="preserve">
-    <value>cbFileFormatDefault</value>
-  </data>
-  <data name="&gt;&gt;cbFileFormatDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbFileFormatDefault.Parent" xml:space="preserve">
-    <value>pnlFileFormatDefault</value>
-  </data>
-  <data name="&gt;&gt;cbFileFormatDefault.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlFileFormatDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 86</value>
-  </data>
-  <data name="pnlFileFormatDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 32</value>
-  </data>
-  <data name="pnlFileFormatDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;pnlFileFormatDefault.Name" xml:space="preserve">
-    <value>pnlFileFormatDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlFileFormatDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlFileFormatDefault.Parent" xml:space="preserve">
-    <value>pnlSettingsDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlFileFormatDefault.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblJpegQualityDefault1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblJpegQualityDefault1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 8</value>
-  </data>
-  <data name="lblJpegQualityDefault1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 17</value>
-  </data>
-  <data name="lblJpegQualityDefault1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblJpegQualityDefault1.Text" xml:space="preserve">
-    <value>%</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault1.Name" xml:space="preserve">
-    <value>lblJpegQualityDefault1</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault1.Parent" xml:space="preserve">
-    <value>pnlJpegQualityDefault</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblJpegQualityDefault.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblJpegQualityDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="lblJpegQualityDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
-  </data>
-  <data name="lblJpegQualityDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lblJpegQualityDefault.Text" xml:space="preserve">
-    <value>Jpeg quality</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault.Name" xml:space="preserve">
-    <value>lblJpegQualityDefault</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault.Parent" xml:space="preserve">
-    <value>pnlJpegQualityDefault</value>
-  </data>
-  <data name="&gt;&gt;lblJpegQualityDefault.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tbJpegQualityDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 5</value>
-  </data>
-  <data name="tbJpegQualityDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
-  </data>
-  <data name="tbJpegQualityDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tbJpegQualityDefault.Name" xml:space="preserve">
-    <value>tbJpegQualityDefault</value>
-  </data>
-  <data name="&gt;&gt;tbJpegQualityDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbJpegQualityDefault.Parent" xml:space="preserve">
-    <value>pnlJpegQualityDefault</value>
-  </data>
-  <data name="&gt;&gt;tbJpegQualityDefault.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pnlJpegQualityDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 124</value>
-  </data>
-  <data name="pnlJpegQualityDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 32</value>
-  </data>
-  <data name="pnlJpegQualityDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;pnlJpegQualityDefault.Name" xml:space="preserve">
-    <value>pnlJpegQualityDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlJpegQualityDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlJpegQualityDefault.Parent" xml:space="preserve">
-    <value>pnlSettingsDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlJpegQualityDefault.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblSoundLocationDefault.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSoundLocationDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="lblSoundLocationDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 17</value>
-  </data>
-  <data name="lblSoundLocationDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblSoundLocationDefault.Text" xml:space="preserve">
-    <value>Sound location</value>
-  </data>
-  <data name="&gt;&gt;lblSoundLocationDefault.Name" xml:space="preserve">
-    <value>lblSoundLocationDefault</value>
-  </data>
-  <data name="&gt;&gt;lblSoundLocationDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSoundLocationDefault.Parent" xml:space="preserve">
-    <value>pnlSoundLocationDefault</value>
-  </data>
-  <data name="&gt;&gt;lblSoundLocationDefault.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSoundLocationDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 5</value>
-  </data>
-  <data name="btnSoundLocationDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="btnSoundLocationDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnSoundLocationDefault.Text" xml:space="preserve">
-    <value>…</value>
-  </data>
-  <data name="&gt;&gt;btnSoundLocationDefault.Name" xml:space="preserve">
-    <value>btnSoundLocationDefault</value>
-  </data>
-  <data name="&gt;&gt;btnSoundLocationDefault.Type" xml:space="preserve">
+  <data name="&gt;&gt;btntbDestinationFolderDefault.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnSoundLocationDefault.Parent" xml:space="preserve">
-    <value>pnlSoundLocationDefault</value>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
   </data>
-  <data name="&gt;&gt;btnSoundLocationDefault.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btntbDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.Name" xml:space="preserve">
+    <value>lblDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tbSoundLocationDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 5</value>
+  <data name="&gt;&gt;tbDestinationFolderDefault.Name" xml:space="preserve">
+    <value>tbDestinationFolderDefault</value>
   </data>
-  <data name="tbSoundLocationDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 22</value>
-  </data>
-  <data name="tbSoundLocationDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tbSoundLocationDefault.Name" xml:space="preserve">
-    <value>tbSoundLocationDefault</value>
-  </data>
-  <data name="&gt;&gt;tbSoundLocationDefault.Type" xml:space="preserve">
+  <data name="&gt;&gt;tbDestinationFolderDefault.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbSoundLocationDefault.Parent" xml:space="preserve">
-    <value>pnlSoundLocationDefault</value>
+  <data name="&gt;&gt;tbDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
   </data>
-  <data name="&gt;&gt;tbSoundLocationDefault.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tbDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pnlSoundLocationDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 204</value>
+  <data name="pnlDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
   </data>
-  <data name="pnlSoundLocationDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 32</value>
+  <data name="pnlDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 33</value>
   </data>
-  <data name="pnlSoundLocationDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="pnlDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;pnlSoundLocationDefault.Name" xml:space="preserve">
-    <value>pnlSoundLocationDefault</value>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Name" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
   </data>
-  <data name="&gt;&gt;pnlSoundLocationDefault.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnlSoundLocationDefault.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Parent" xml:space="preserve">
     <value>pnlSettingsDefault</value>
   </data>
-  <data name="&gt;&gt;pnlSoundLocationDefault.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btntbDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
     <value>498, 5</value>
@@ -642,29 +510,8 @@
   <data name="&gt;&gt;tbDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pnlDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="pnlDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 33</value>
-  </data>
-  <data name="pnlDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;pnlDestinationFolderDefault.Name" xml:space="preserve">
-    <value>pnlDestinationFolderDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlDestinationFolderDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlDestinationFolderDefault.Parent" xml:space="preserve">
-    <value>pnlSettingsDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlDestinationFolderDefault.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="btnApplyDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 422</value>
+    <value>407, 119</value>
   </data>
   <data name="btnApplyDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 28</value>
@@ -673,7 +520,7 @@
     <value>8</value>
   </data>
   <data name="btnApplyDefault.Text" xml:space="preserve">
-    <value>Apply</value>
+    <value>&amp;Apply</value>
   </data>
   <data name="&gt;&gt;btnApplyDefault.Name" xml:space="preserve">
     <value>btnApplyDefault</value>
@@ -685,38 +532,11 @@
     <value>pnlSettingsDefault</value>
   </data>
   <data name="&gt;&gt;btnApplyDefault.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pnlSettingsDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 31</value>
-  </data>
-  <data name="pnlSettingsDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 458</value>
-  </data>
-  <data name="pnlSettingsDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlSettingsDefault.Name" xml:space="preserve">
-    <value>pnlSettingsDefault</value>
-  </data>
-  <data name="&gt;&gt;pnlSettingsDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlSettingsDefault.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlSettingsDefault.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="cmsNotify.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>357, 21</value>
   </metadata>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
   <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 28</value>
   </data>
@@ -726,15 +546,15 @@
   <data name="&gt;&gt;cmsNotify.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 24</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <metadata name="msMainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>23, 17</value>
   </metadata>
-  <data name="item1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 24</value>
-  </data>
-  <data name="item1ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item1</value>
-  </data>
   <data name="msMainMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -758,6 +578,12 @@
   </data>
   <data name="&gt;&gt;msMainMenu.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tsmiFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 24</value>
+  </data>
+  <data name="tsmiFile.Text" xml:space="preserve">
+    <value>&amp;File</value>
   </data>
   <metadata name="od.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>194, 16</value>
@@ -6943,6 +6769,21 @@
   <data name="ntfIcn.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 24</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 6</value>
+  </data>
+  <data name="shotNowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 24</value>
+  </data>
+  <data name="shotNowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Shot now</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -6950,7 +6791,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>542, 492</value>
+    <value>542, 187</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -13136,10 +12977,10 @@
   <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;item1ToolStripMenuItem.Name" xml:space="preserve">
-    <value>item1ToolStripMenuItem</value>
+  <data name="&gt;&gt;tsmiFile.Name" xml:space="preserve">
+    <value>tsmiFile</value>
   </data>
-  <data name="&gt;&gt;item1ToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmiFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;od.Name" xml:space="preserve">
@@ -13153,6 +12994,24 @@
   </data>
   <data name="&gt;&gt;ntfIcn.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shotNowToolStripMenuItem.Name" xml:space="preserve">
+    <value>shotNowToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;shotNowToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>

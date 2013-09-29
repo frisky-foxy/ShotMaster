@@ -43,11 +43,11 @@ namespace prjShotMaster.Actions
                 string path = value;
                 try
                 {
-                    // если путь относительный (без ":"), считаем, что относительно текущего пользователя
+                    // если путь относительный (без ":"), считаем, что относительно Рабочего стола текущего пользователя
                     if (path.IndexOf(':') < 0)
                     {
-                        // C:\Users\Username
-                        path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + path;
+                        // f.e., C:\Users\Username\Desktop
+                        path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
                     }
                     // создать папку, если не существует
                     if (!System.IO.Directory.Exists(path))

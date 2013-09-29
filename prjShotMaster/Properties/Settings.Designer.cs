@@ -25,7 +25,7 @@ namespace prjShotMaster.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\Desktop\\_shotmaster")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\_shotmaster")]
         public string DestinationFolder {
             get {
                 return ((string)(this["DestinationFolder"]));

@@ -46,7 +46,7 @@
             this.lblJpegQualityDefault1 = new System.Windows.Forms.Label();
             this.lblJpegQualityDefault = new System.Windows.Forms.Label();
             this.tbJpegQualityDefault = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlSoundLocationDefault = new System.Windows.Forms.Panel();
             this.lblSoundLocationDefault = new System.Windows.Forms.Label();
             this.btnSoundLocationDefault = new System.Windows.Forms.Button();
             this.tbSoundLocationDefault = new System.Windows.Forms.TextBox();
@@ -64,43 +64,43 @@
             this.pnlTimerIntervalDefault.SuspendLayout();
             this.pnlFileFormatDefault.SuspendLayout();
             this.pnlJpegQualityDefault.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlSoundLocationDefault.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSettingsDefault
             // 
-            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Controls.Add(this.lbDeviceIndexW);
             this.pnlSettingsDefault.Controls.Add(this.lbDeviceIndexS);
             this.pnlSettingsDefault.Controls.Add(this.pnlPlaySoundDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlTimerIntervalDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlFileFormatDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlJpegQualityDefault);
-            this.pnlSettingsDefault.Controls.Add(this.panel2);
+            this.pnlSettingsDefault.Controls.Add(this.pnlSoundLocationDefault);
             this.pnlSettingsDefault.Controls.Add(this.panel1);
             this.pnlSettingsDefault.Controls.Add(this.btnApplyDefault);
+            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Name = "pnlSettingsDefault";
             // 
             // lbDeviceIndexW
             // 
-            resources.ApplyResources(this.lbDeviceIndexW, "lbDeviceIndexW");
             this.lbDeviceIndexW.FormattingEnabled = true;
+            resources.ApplyResources(this.lbDeviceIndexW, "lbDeviceIndexW");
             this.lbDeviceIndexW.Name = "lbDeviceIndexW";
             this.lbDeviceIndexW.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             // 
             // lbDeviceIndexS
             // 
-            resources.ApplyResources(this.lbDeviceIndexS, "lbDeviceIndexS");
             this.lbDeviceIndexS.FormattingEnabled = true;
+            resources.ApplyResources(this.lbDeviceIndexS, "lbDeviceIndexS");
             this.lbDeviceIndexS.Name = "lbDeviceIndexS";
             this.lbDeviceIndexS.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             // 
             // pnlPlaySoundDefault
             // 
-            resources.ApplyResources(this.pnlPlaySoundDefault, "pnlPlaySoundDefault");
             this.pnlPlaySoundDefault.Controls.Add(this.cbPlaySoundDefault);
+            resources.ApplyResources(this.pnlPlaySoundDefault, "pnlPlaySoundDefault");
             this.pnlPlaySoundDefault.Name = "pnlPlaySoundDefault";
             // 
             // cbPlaySoundDefault
@@ -111,10 +111,10 @@
             // 
             // pnlTimerIntervalDefault
             // 
-            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault1);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault);
             this.pnlTimerIntervalDefault.Controls.Add(this.tbTimerIntervalDefault);
+            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
             this.pnlTimerIntervalDefault.Name = "pnlTimerIntervalDefault";
             // 
             // lblTimerIntervalDefault1
@@ -134,9 +134,9 @@
             // 
             // pnlFileFormatDefault
             // 
-            resources.ApplyResources(this.pnlFileFormatDefault, "pnlFileFormatDefault");
             this.pnlFileFormatDefault.Controls.Add(this.lblFileFormatDefault);
             this.pnlFileFormatDefault.Controls.Add(this.cbFileFormatDefault);
+            resources.ApplyResources(this.pnlFileFormatDefault, "pnlFileFormatDefault");
             this.pnlFileFormatDefault.Name = "pnlFileFormatDefault";
             // 
             // lblFileFormatDefault
@@ -146,16 +146,16 @@
             // 
             // cbFileFormatDefault
             // 
-            resources.ApplyResources(this.cbFileFormatDefault, "cbFileFormatDefault");
             this.cbFileFormatDefault.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFileFormatDefault, "cbFileFormatDefault");
             this.cbFileFormatDefault.Name = "cbFileFormatDefault";
             // 
             // pnlJpegQualityDefault
             // 
-            resources.ApplyResources(this.pnlJpegQualityDefault, "pnlJpegQualityDefault");
             this.pnlJpegQualityDefault.Controls.Add(this.lblJpegQualityDefault1);
             this.pnlJpegQualityDefault.Controls.Add(this.lblJpegQualityDefault);
             this.pnlJpegQualityDefault.Controls.Add(this.tbJpegQualityDefault);
+            resources.ApplyResources(this.pnlJpegQualityDefault, "pnlJpegQualityDefault");
             this.pnlJpegQualityDefault.Name = "pnlJpegQualityDefault";
             // 
             // lblJpegQualityDefault1
@@ -173,13 +173,13 @@
             resources.ApplyResources(this.tbJpegQualityDefault, "tbJpegQualityDefault");
             this.tbJpegQualityDefault.Name = "tbJpegQualityDefault";
             // 
-            // panel2
+            // pnlSoundLocationDefault
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Controls.Add(this.lblSoundLocationDefault);
-            this.panel2.Controls.Add(this.btnSoundLocationDefault);
-            this.panel2.Controls.Add(this.tbSoundLocationDefault);
-            this.panel2.Name = "panel2";
+            this.pnlSoundLocationDefault.Controls.Add(this.lblSoundLocationDefault);
+            this.pnlSoundLocationDefault.Controls.Add(this.btnSoundLocationDefault);
+            this.pnlSoundLocationDefault.Controls.Add(this.tbSoundLocationDefault);
+            resources.ApplyResources(this.pnlSoundLocationDefault, "pnlSoundLocationDefault");
+            this.pnlSoundLocationDefault.Name = "pnlSoundLocationDefault";
             // 
             // lblSoundLocationDefault
             // 
@@ -199,10 +199,10 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.btntbDestinationFolderDefault);
             this.panel1.Controls.Add(this.lblDestinationFolderDefault);
             this.panel1.Controls.Add(this.tbDestinationFolderDefault);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // btntbDestinationFolderDefault
@@ -229,25 +229,24 @@
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.item1ToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // item1ToolStripMenuItem
             // 
-            resources.ApplyResources(this.item1ToolStripMenuItem, "item1ToolStripMenuItem");
             this.item1ToolStripMenuItem.Name = "item1ToolStripMenuItem";
+            resources.ApplyResources(this.item1ToolStripMenuItem, "item1ToolStripMenuItem");
             // 
             // od
             // 
             this.od.FileName = "openFileDialog1";
-            resources.ApplyResources(this.od, "od");
             // 
             // frmMain
             // 
@@ -266,8 +265,8 @@
             this.pnlFileFormatDefault.PerformLayout();
             this.pnlJpegQualityDefault.ResumeLayout(false);
             this.pnlJpegQualityDefault.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlSoundLocationDefault.ResumeLayout(false);
+            this.pnlSoundLocationDefault.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -285,7 +284,7 @@
         private System.Windows.Forms.Label lblDestinationFolderDefault;
         private System.Windows.Forms.TextBox tbDestinationFolderDefault;
         private System.Windows.Forms.Button btntbDestinationFolderDefault;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlSoundLocationDefault;
         private System.Windows.Forms.TextBox tbSoundLocationDefault;
         private System.Windows.Forms.Button btnSoundLocationDefault;
         private System.Windows.Forms.Label lblSoundLocationDefault;

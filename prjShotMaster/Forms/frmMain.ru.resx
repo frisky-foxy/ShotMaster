@@ -164,4 +164,7 @@
   <data name="lblDestinationFolderDefault.Text" xml:space="preserve">
     <value>Куда сохранять</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
 </root>

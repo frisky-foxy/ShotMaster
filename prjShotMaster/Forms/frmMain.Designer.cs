@@ -55,10 +55,11 @@
             this.lblDestinationFolderDefault = new System.Windows.Forms.Label();
             this.tbDestinationFolderDefault = new System.Windows.Forms.TextBox();
             this.btnApplyDefault = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cmsNotify = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.item1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.od = new System.Windows.Forms.OpenFileDialog();
+            this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -66,7 +67,7 @@
             this.pnlJpegQualityDefault.SuspendLayout();
             this.pnlSoundLocationDefault.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.msMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSettingsDefault
@@ -227,17 +228,17 @@
             this.btnApplyDefault.Name = "btnApplyDefault";
             this.btnApplyDefault.UseVisualStyleBackColor = true;
             // 
-            // contextMenuStrip1
+            // cmsNotify
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            this.cmsNotify.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.cmsNotify, "cmsNotify");
             // 
-            // menuStrip1
+            // msMainMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.item1ToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            resources.ApplyResources(this.msMainMenu, "msMainMenu");
+            this.msMainMenu.Name = "msMainMenu";
             // 
             // item1ToolStripMenuItem
             // 
@@ -248,13 +249,18 @@
             // 
             this.od.FileName = "openFileDialog1";
             // 
+            // ntfIcn
+            // 
+            this.ntfIcn.ContextMenuStrip = this.cmsNotify;
+            resources.ApplyResources(this.ntfIcn, "ntfIcn");
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
             this.pnlSettingsDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.ResumeLayout(false);
@@ -269,8 +275,8 @@
             this.pnlSoundLocationDefault.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.msMainMenu.ResumeLayout(false);
+            this.msMainMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,10 +309,11 @@
         private System.Windows.Forms.CheckBox cbPlaySoundDefault;
         private System.Windows.Forms.ListBox lbDeviceIndexW;
         private System.Windows.Forms.ListBox lbDeviceIndexS;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ContextMenuStrip cmsNotify;
+        private System.Windows.Forms.MenuStrip msMainMenu;
         private System.Windows.Forms.ToolStripMenuItem item1ToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog od;
+        private System.Windows.Forms.NotifyIcon ntfIcn;
     }
 }
 

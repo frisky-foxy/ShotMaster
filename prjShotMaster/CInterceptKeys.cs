@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 
-namespace prjGetScreenshots.Classes
+namespace prjShotMaster
 {
     /*
      * src: http://blogs.msdn.com/b/toub/archive/2006/05/03/589423.aspx

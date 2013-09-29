@@ -19,9 +19,31 @@ namespace prjShotMaster
         {
             InitializeComponent();
             FillSettingsControls();
+            // hook (старт перехвата клавы)
+            CInterceptKeys.Hook();
+            CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
 
             // test
             pnlSettingsDefault.Enabled = false;
+        }
+
+        private void InterceptKeys_KeyUp(Keys Key)
+        {
+            // глобальный перехват клавы
+            List<Keys> PressedKeys = CInterceptKeys.KeysDown;
+            // Ctrl + L + K - в настройках хранить
+            if (
+                (
+                    PressedKeys.Contains(Keys.Control)
+                    || PressedKeys.Contains(Keys.LControlKey)
+                    || PressedKeys.Contains(Keys.RControlKey)
+                )
+                && PressedKeys.Contains(Keys.L)
+                && PressedKeys.Contains(Keys.K)
+            )
+            {
+                ntfIcn.ShowBalloonTip(100, "prjShotMaster", "Test CInterceptKeys", ToolTipIcon.Info);
+            }
         }
 
         private void FillSettingsControls()

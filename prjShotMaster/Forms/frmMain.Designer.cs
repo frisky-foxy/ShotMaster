@@ -50,24 +50,24 @@
             this.lblSoundLocationDefault = new System.Windows.Forms.Label();
             this.btnSoundLocationDefault = new System.Windows.Forms.Button();
             this.tbSoundLocationDefault = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlDestinationFolderDefault = new System.Windows.Forms.Panel();
             this.btntbDestinationFolderDefault = new System.Windows.Forms.Button();
             this.lblDestinationFolderDefault = new System.Windows.Forms.Label();
             this.tbDestinationFolderDefault = new System.Windows.Forms.TextBox();
             this.btnApplyDefault = new System.Windows.Forms.Button();
             this.cmsNotify = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.item1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.od = new System.Windows.Forms.OpenFileDialog();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
             this.pnlFileFormatDefault.SuspendLayout();
             this.pnlJpegQualityDefault.SuspendLayout();
             this.pnlSoundLocationDefault.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlDestinationFolderDefault.SuspendLayout();
             this.cmsNotify.SuspendLayout();
             this.msMainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +81,7 @@
             this.pnlSettingsDefault.Controls.Add(this.pnlFileFormatDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlJpegQualityDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlSoundLocationDefault);
-            this.pnlSettingsDefault.Controls.Add(this.panel1);
+            this.pnlSettingsDefault.Controls.Add(this.pnlDestinationFolderDefault);
             this.pnlSettingsDefault.Controls.Add(this.btnApplyDefault);
             resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Name = "pnlSettingsDefault";
@@ -200,13 +200,13 @@
             resources.ApplyResources(this.tbSoundLocationDefault, "tbSoundLocationDefault");
             this.tbSoundLocationDefault.Name = "tbSoundLocationDefault";
             // 
-            // panel1
+            // pnlDestinationFolderDefault
             // 
-            this.panel1.Controls.Add(this.btntbDestinationFolderDefault);
-            this.panel1.Controls.Add(this.lblDestinationFolderDefault);
-            this.panel1.Controls.Add(this.tbDestinationFolderDefault);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.pnlDestinationFolderDefault.Controls.Add(this.btntbDestinationFolderDefault);
+            this.pnlDestinationFolderDefault.Controls.Add(this.lblDestinationFolderDefault);
+            this.pnlDestinationFolderDefault.Controls.Add(this.tbDestinationFolderDefault);
+            resources.ApplyResources(this.pnlDestinationFolderDefault, "pnlDestinationFolderDefault");
+            this.pnlDestinationFolderDefault.Name = "pnlDestinationFolderDefault";
             // 
             // btntbDestinationFolderDefault
             // 
@@ -229,6 +229,7 @@
             resources.ApplyResources(this.btnApplyDefault, "btnApplyDefault");
             this.btnApplyDefault.Name = "btnApplyDefault";
             this.btnApplyDefault.UseVisualStyleBackColor = true;
+            this.btnApplyDefault.Click += new System.EventHandler(this.btnApplyDefault_Click);
             // 
             // cmsNotify
             // 
@@ -236,6 +237,12 @@
             this.closeToolStripMenuItem});
             this.cmsNotify.Name = "contextMenuStrip1";
             resources.ApplyResources(this.cmsNotify, "cmsNotify");
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // msMainMenu
             // 
@@ -258,12 +265,6 @@
             this.ntfIcn.ContextMenuStrip = this.cmsNotify;
             resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.DoubleClick += new System.EventHandler(this.ntfIcn_DoubleClick);
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -288,8 +289,8 @@
             this.pnlJpegQualityDefault.PerformLayout();
             this.pnlSoundLocationDefault.ResumeLayout(false);
             this.pnlSoundLocationDefault.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlDestinationFolderDefault.ResumeLayout(false);
+            this.pnlDestinationFolderDefault.PerformLayout();
             this.cmsNotify.ResumeLayout(false);
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
@@ -302,7 +303,7 @@
 
         private System.Windows.Forms.Panel pnlSettingsDefault;
         private System.Windows.Forms.Button btnApplyDefault;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlDestinationFolderDefault;
         private System.Windows.Forms.Label lblDestinationFolderDefault;
         private System.Windows.Forms.TextBox tbDestinationFolderDefault;
         private System.Windows.Forms.Button btntbDestinationFolderDefault;

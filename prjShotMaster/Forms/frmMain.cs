@@ -19,12 +19,17 @@ namespace prjShotMaster
         public frmMain()
         {
             InitializeComponent();
-            FillSettingsControls();
+            fillSettingsControls();
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
             // TEST MODE
-            pnlSettingsDefault.Enabled = false;
+            pnlDestinationFolderDefault.Enabled = false;
+            pnlSoundLocationDefault.Enabled = false;
+            pnlJpegQualityDefault.Enabled = false;
+            lbDeviceIndexS.Enabled = false;
+            lbDeviceIndexW.Enabled = false;
+            // /TEST MODE
             // Start
             actionManager.Start();
             // on start
@@ -56,7 +61,6 @@ namespace prjShotMaster
             if (b_minimize_on_close)
             {
                 e.Cancel = true;
-                // WindowState = FormWindowState.Minimized;
                 Visible = false;
             }
             else
@@ -82,13 +86,34 @@ namespace prjShotMaster
             Show();
         }
 
-        private void FillSettingsControls()
+        private void btnApplyDefault_Click(object sender, EventArgs e)
+        {
+            applySettingsDefault();
+        }
+
+        private void applySettingsDefault()
+        {
+            Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
+            Properties.Settings.Default.SoundLocation = tbSoundLocationDefault.Text;
+            Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
+            Properties.Settings.Default.DestinationFolder = tbDestinationFolderDefault.Text;
+            Properties.Settings.Default.FileFormat = (byte)cbFileFormatDefault.SelectedIndex;
+            Properties.Settings.Default.JpegQuality = Convert.ToByte(tbJpegQualityDefault.Text);
+            // multiselect:
+            // Properties.Settings.Default.DeviceIndexW = lbDeviceIndexW.SelectedIndex;
+            // Properties.Settings.Default.DeviceIndexS = lbDeviceIndexS.SelectedIndex;
+            Properties.Settings.Default.Save();
+
+            fillSettingsControls();
+        }
+
+        private void fillSettingsControls()
         {
             // lbDeviceIndex
             foreach (System.Collections.DictionaryEntry actionEntry in actionManager.actionList)
             {
                 CShotAction action = (actionEntry.Value as CShotAction);
-                Control lbDeviceIndex = FindControlByName("lbDeviceIndex" + action.action_code);
+                Control lbDeviceIndex = findControlByName("lbDeviceIndex" + action.action_code);
                 (lbDeviceIndex as ListBox).Items.Clear();
                 foreach (string str in action.DeviceList)
                 {
@@ -100,10 +125,10 @@ namespace prjShotMaster
             cbFileFormatDefault.Items.Add(CShotActionSettings.IT_EXT_JPG);
             cbFileFormatDefault.Items.Add(CShotActionSettings.IT_EXT_PNG);
             // show current settings values
-            FillSettingsControlsState();
+            fillSettingsControlsState();
         }
 
-        private void FillSettingsControlsState()
+        private void fillSettingsControlsState()
         {
             tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
             tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
@@ -113,10 +138,10 @@ namespace prjShotMaster
             tbSoundLocationDefault.Text = Properties.Settings.Default.SoundLocation;
 
             pnlJpegQualityDefault.Enabled = (cbFileFormatDefault.SelectedIndex == CShotActionSettings.IT_JPG);
-            pnlSoundLocationDefault.Enabled = cbPlaySoundDefault.Checked;
+            // pnlSoundLocationDefault.Enabled = cbPlaySoundDefault.Checked;
         }
 
-        private Control FindControlByName(string name)
+        private Control findControlByName(string name)
         {
             foreach (Control control in this.Controls.Find(name, true))
             {

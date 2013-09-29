@@ -267,14 +267,16 @@
             // 
             // frmMain
             // 
+            this.AcceptButton = this.btnApplyDefault;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
+            this.ShowInTaskbar = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlSettingsDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.PerformLayout();

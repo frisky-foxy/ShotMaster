@@ -119,14 +119,6 @@ namespace prjShotMaster
             }
         }
 
-        public void do_action()
-        {
-            foreach (DictionaryEntry actionEntry in actionList)
-            {
-                do_action(actionEntry.Key.ToString());
-            }
-        }
-
         private CShotActionSettings set_settings(string action_code)
         {
             // стоп таймер

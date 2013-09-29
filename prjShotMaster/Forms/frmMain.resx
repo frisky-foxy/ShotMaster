@@ -1011,11 +1011,17 @@
   <metadata name="msMainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>23, 17</value>
   </metadata>
+  <data name="item1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 24</value>
+  </data>
+  <data name="item1ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Item1</value>
+  </data>
   <data name="msMainMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>840, 28</value>
+    <value>807, 28</value>
   </data>
   <data name="msMainMenu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1034,12 +1040,6 @@
   </data>
   <data name="&gt;&gt;msMainMenu.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="item1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 24</value>
-  </data>
-  <data name="item1ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item1</value>
   </data>
   <metadata name="od.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>194, 16</value>
@@ -7232,7 +7232,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>840, 492</value>
+    <value>807, 492</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

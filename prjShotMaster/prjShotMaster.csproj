@@ -56,6 +56,7 @@
     <Compile Include="Actions\CShotResult.cs" />
     <Compile Include="Actions\CWebcamShotAction.cs" />
     <Compile Include="CActionManager.cs" />
+    <Compile Include="CInterceptKeys.cs" />
     <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>

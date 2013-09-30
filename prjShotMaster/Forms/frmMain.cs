@@ -15,6 +15,8 @@ namespace prjShotMaster
     {
         public CActionManager actionManager = new CActionManager();
         private bool b_minimize_on_close = true;
+        private static string AC_TAG_PAUSE = "Pause";
+        private static string AC_TAG_START = "Start";
 
         public frmMain()
         {
@@ -27,6 +29,7 @@ namespace prjShotMaster
             Visible = false;
             // Start
             actionManager.Start();
+            pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             // on start
             actionManager.Shot();
         }
@@ -68,16 +71,32 @@ namespace prjShotMaster
             }
         }
 
+        /* Menu actions */
         private void exitApp(object sender, EventArgs e)
         {
             b_minimize_on_close = false;
             Close();
         }
 
-        private void ntfIcn_DoubleClick(object sender, EventArgs e)
+        private void shotNow(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Normal;
-            Show();
+            actionManager.Shot();
+        }
+
+        private void pauseStart(object sender, EventArgs e)
+        {
+            if ((sender as Control).Tag == AC_TAG_PAUSE)
+            {
+                // actionManager.Shot();
+                actionManager.Stop();
+                (sender as Control).Tag = AC_TAG_START;
+            }
+            else if ((sender as Control).Tag == AC_TAG_START)
+            {
+                actionManager.Start();
+                // actionManager.Shot();
+                (sender as Control).Tag = AC_TAG_PAUSE;
+            }
         }
 
         private void openDestFolder(object sender, EventArgs e)
@@ -91,10 +110,12 @@ namespace prjShotMaster
             }
             System.Diagnostics.Process.Start(path);
         }
+        /* /Menu actions */
 
-        private void pauseStart(object sender, EventArgs e)
+        private void ntfIcn_DoubleClick(object sender, EventArgs e)
         {
-            // 
+            WindowState = FormWindowState.Normal;
+            Show();
         }
 
         private void applySettingsDefault(object sender, EventArgs e)

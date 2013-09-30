@@ -134,7 +134,6 @@ namespace prjShotMaster
             PropertyInfo[] props = typeof(CShotActionSettings).GetProperties();
             foreach (PropertyInfo prop in props)
             {
-                // prop.SetValue(ActionSettings, Properties.Settings.Default[prop.Name + action_code]);
                 prop.SetValue(ActionSettings, Properties.Settings.Default[prop.Name + action_code], null);
             }
             // таймер, гоу

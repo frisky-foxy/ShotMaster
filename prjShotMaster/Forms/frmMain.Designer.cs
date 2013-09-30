@@ -66,17 +66,17 @@
             // 
             // pnlSettingsDefault
             // 
-            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Controls.Add(this.pnlPlaySoundDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlTimerIntervalDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlDestinationFolderDefault);
             this.pnlSettingsDefault.Controls.Add(this.btnApplyDefault);
+            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Name = "pnlSettingsDefault";
             // 
             // pnlPlaySoundDefault
             // 
-            resources.ApplyResources(this.pnlPlaySoundDefault, "pnlPlaySoundDefault");
             this.pnlPlaySoundDefault.Controls.Add(this.cbPlaySoundDefault);
+            resources.ApplyResources(this.pnlPlaySoundDefault, "pnlPlaySoundDefault");
             this.pnlPlaySoundDefault.Name = "pnlPlaySoundDefault";
             // 
             // cbPlaySoundDefault
@@ -87,10 +87,10 @@
             // 
             // pnlTimerIntervalDefault
             // 
-            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault1);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault);
             this.pnlTimerIntervalDefault.Controls.Add(this.tbTimerIntervalDefault);
+            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
             this.pnlTimerIntervalDefault.Name = "pnlTimerIntervalDefault";
             // 
             // lblTimerIntervalDefault1
@@ -110,10 +110,10 @@
             // 
             // pnlDestinationFolderDefault
             // 
-            resources.ApplyResources(this.pnlDestinationFolderDefault, "pnlDestinationFolderDefault");
             this.pnlDestinationFolderDefault.Controls.Add(this.btntbDestinationFolderDefault);
             this.pnlDestinationFolderDefault.Controls.Add(this.lblDestinationFolderDefault);
             this.pnlDestinationFolderDefault.Controls.Add(this.tbDestinationFolderDefault);
+            resources.ApplyResources(this.pnlDestinationFolderDefault, "pnlDestinationFolderDefault");
             this.pnlDestinationFolderDefault.Name = "pnlDestinationFolderDefault";
             // 
             // btntbDestinationFolderDefault
@@ -141,28 +141,27 @@
             // 
             // cmsNotify
             // 
-            resources.ApplyResources(this.cmsNotify, "cmsNotify");
             this.cmsNotify.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.closeToolStripMenuItem});
             this.cmsNotify.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.cmsNotify, "cmsNotify");
             // 
             // closeToolStripMenuItem
             // 
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.exitApp);
             // 
             // msMainMenu
             // 
-            resources.ApplyResources(this.msMainMenu, "msMainMenu");
             this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiFile,
             this.helpToolStripMenuItem});
+            resources.ApplyResources(this.msMainMenu, "msMainMenu");
             this.msMainMenu.Name = "msMainMenu";
             // 
             // tsmiFile
             // 
-            resources.ApplyResources(this.tsmiFile, "tsmiFile");
             this.tsmiFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pauseToolStripMenuItem,
             this.shotNowToolStripMenuItem,
@@ -170,62 +169,63 @@
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.tsmiFile.Name = "tsmiFile";
+            resources.ApplyResources(this.tsmiFile, "tsmiFile");
             // 
             // pauseToolStripMenuItem
             // 
-            resources.ApplyResources(this.pauseToolStripMenuItem, "pauseToolStripMenuItem");
             this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
+            resources.ApplyResources(this.pauseToolStripMenuItem, "pauseToolStripMenuItem");
             this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseStart);
             // 
             // shotNowToolStripMenuItem
             // 
-            resources.ApplyResources(this.shotNowToolStripMenuItem, "shotNowToolStripMenuItem");
             this.shotNowToolStripMenuItem.Name = "shotNowToolStripMenuItem";
+            resources.ApplyResources(this.shotNowToolStripMenuItem, "shotNowToolStripMenuItem");
+            this.shotNowToolStripMenuItem.Click += new System.EventHandler(this.shotNow);
             // 
             // openDestinationFolderToolStripMenuItem
             // 
-            resources.ApplyResources(this.openDestinationFolderToolStripMenuItem, "openDestinationFolderToolStripMenuItem");
             this.openDestinationFolderToolStripMenuItem.Name = "openDestinationFolderToolStripMenuItem";
+            resources.ApplyResources(this.openDestinationFolderToolStripMenuItem, "openDestinationFolderToolStripMenuItem");
             this.openDestinationFolderToolStripMenuItem.Click += new System.EventHandler(this.openDestFolder);
             // 
             // toolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             // 
             // exitToolStripMenuItem
             // 
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitApp);
             // 
             // helpToolStripMenuItem
             // 
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gitHubToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
             // gitHubToolStripMenuItem
             // 
-            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
             this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
+            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
             // 
             // aboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
             // od
             // 
             this.od.FileName = "openFileDialog1";
-            resources.ApplyResources(this.od, "od");
             // 
             // ntfIcn
             // 
-            resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.ContextMenuStrip = this.cmsNotify;
+            resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.DoubleClick += new System.EventHandler(this.ntfIcn_DoubleClick);
             // 
             // frmMain

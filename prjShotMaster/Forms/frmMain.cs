@@ -99,12 +99,16 @@ namespace prjShotMaster
 
         private void applySettingsDefault(object sender, EventArgs e)
         {
-            Properties.Settings.Default.DestinationFolder = tbDestinationFolderDefault.Text;
-            Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
             Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
+            Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
+            Properties.Settings.Default.TimerIntervalS = Convert.ToInt32(tbTimerIntervalDefault.Text);
+            Properties.Settings.Default.TimerIntervalW = Convert.ToInt32(tbTimerIntervalDefault.Text);
+            Properties.Settings.Default.DestinationFolder = tbDestinationFolderDefault.Text;
+            Properties.Settings.Default.DestinationFolderS = tbDestinationFolderDefault.Text;
+            Properties.Settings.Default.DestinationFolderW = tbDestinationFolderDefault.Text;
             Properties.Settings.Default.Save();
 
-            actionManager.updateSettings();
+            actionManager.applySettings();
             fillSettingsControls();
         }
 

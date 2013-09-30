@@ -92,8 +92,7 @@ namespace prjShotMaster
             timer.Elapsed += timer_Elapsed;
             timerList.Add(timer.action_code, timer);
 
-            // action.settings = set_settings(action.action_code);
-            action.settings = setDefaultSettings(action.action_code);
+            action.settings = set_settings(action.action_code);
             actionList.Add(action.action_code, action);
         }
 
@@ -118,32 +117,6 @@ namespace prjShotMaster
                     player.Play();
                 }
             }
-        }
-
-        private CShotActionSettings setDefaultSettings(string action_code)
-        {
-            // стоп таймер
-            CActionManagerTimer timer = (CActionManagerTimer)timerList[action_code];
-            bool b_timer_enabled_state = false;
-            if (timer != null)
-            {
-                b_timer_enabled_state = timer.Enabled;
-                if (b_timer_enabled_state) timer.Stop();
-            }
-            // применить настройки
-            CShotActionSettings ActionSettings = new CShotActionSettings();
-            PropertyInfo[] props = typeof(CShotActionSettings).GetProperties();
-            foreach (PropertyInfo prop in props)
-            {
-                prop.SetValue(ActionSettings, Properties.Settings.Default[prop.Name], null);
-            }
-            // таймер, гоу
-            if (timer != null)
-            {
-                timer.Interval = ActionSettings.TimerInterval;
-                if (b_timer_enabled_state) timer.Start();
-            }
-            return ActionSettings;
         }
 
         private CShotActionSettings set_settings(string action_code)
@@ -173,11 +146,11 @@ namespace prjShotMaster
             return ActionSettings;
         }
 
-        public void updateSettings()
+        public void applySettings()
         {
             foreach (DictionaryEntry actionEntry in actionList)
             {
-                (actionEntry.Value as CShotAction).settings = setDefaultSettings((actionEntry.Value as CShotAction).action_code);
+                (actionEntry.Value as CShotAction).settings = set_settings((actionEntry.Value as CShotAction).action_code);
             }
         }
     }

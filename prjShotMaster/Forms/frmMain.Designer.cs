@@ -51,6 +51,9 @@
             this.openDestinationFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.od = new System.Windows.Forms.OpenFileDialog();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
             this.pnlSettingsDefault.SuspendLayout();
@@ -153,7 +156,8 @@
             // 
             resources.ApplyResources(this.msMainMenu, "msMainMenu");
             this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiFile});
+            this.tsmiFile,
+            this.helpToolStripMenuItem});
             this.msMainMenu.Name = "msMainMenu";
             // 
             // tsmiFile
@@ -195,6 +199,24 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitApp);
             // 
+            // helpToolStripMenuItem
+            // 
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gitHubToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            // 
+            // gitHubToolStripMenuItem
+            // 
+            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
+            this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            // 
             // od
             // 
             this.od.FileName = "openFileDialog1";
@@ -213,7 +235,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
             this.ShowInTaskbar = false;
@@ -258,6 +279,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem openDestinationFolderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

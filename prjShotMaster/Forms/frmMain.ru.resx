@@ -188,6 +188,21 @@
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Выход</value>
   </data>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 24</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="gitHubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 24</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 24</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе…</value>
+  </data>
   <data name="ntfIcn.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAAAIABoBAAAZgAAACAgAAAAACAAqBAAAM4EAAAwMAAAAAAgAKglAAB2FQAAQEAAAAAA
@@ -6359,6 +6374,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
+  </data>
+  <data name="ntfIcn.Text" xml:space="preserve">
+    <value>Дважды щелкните, чтобы открыть окно с настройками</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

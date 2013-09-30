@@ -62,12 +62,9 @@ namespace prjShotMaster
             }
             else
             {
-                // on exit
-                actionManager.Shot();
-                // Stop
+                actionManager.Shot(); // on exit
                 actionManager.Stop();
-                // UnHook
-                CInterceptKeys.UnHook();
+                CInterceptKeys.UnHook(); // UnHook
             }
         }
 
@@ -85,17 +82,17 @@ namespace prjShotMaster
 
         private void pauseStart(object sender, EventArgs e)
         {
-            if ((sender as Control).Tag == AC_TAG_PAUSE)
+            if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_PAUSE)
             {
-                // actionManager.Shot();
+                actionManager.Shot();
                 actionManager.Stop();
-                (sender as Control).Tag = AC_TAG_START;
+                (sender as ToolStripMenuItem).Tag = AC_TAG_START;
             }
-            else if ((sender as Control).Tag == AC_TAG_START)
+            else if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_START)
             {
                 actionManager.Start();
-                // actionManager.Shot();
-                (sender as Control).Tag = AC_TAG_PAUSE;
+                actionManager.Shot();
+                (sender as ToolStripMenuItem).Tag = AC_TAG_PAUSE;
             }
         }
 

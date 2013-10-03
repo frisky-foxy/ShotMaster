@@ -56,6 +56,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
+            this.tmrDefault = new System.Windows.Forms.Timer(this.components);
+            this.tmrOneSecond = new System.Windows.Forms.Timer(this.components);
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -228,6 +230,16 @@
             resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.DoubleClick += new System.EventHandler(this.ntfIcn_DoubleClick);
             // 
+            // tmrDefault
+            // 
+            this.tmrDefault.Tick += new System.EventHandler(this.tmrDefault_Tick);
+            // 
+            // tmrOneSecond
+            // 
+            this.tmrOneSecond.Enabled = true;
+            this.tmrOneSecond.Interval = 1000;
+            this.tmrOneSecond.Tick += new System.EventHandler(this.tmrOneSecond_Tick);
+            // 
             // frmMain
             // 
             this.AcceptButton = this.btnApplyDefault;
@@ -235,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
             this.ShowInTaskbar = false;
@@ -282,6 +295,8 @@
         private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.FolderBrowserDialog fbd;
+        private System.Windows.Forms.Timer tmrDefault;
+        private System.Windows.Forms.Timer tmrOneSecond;
     }
 }
 

@@ -238,5 +238,17 @@ namespace prjShotMaster.Properties {
                 this["GitHubLink"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Ctrl + K + J")]
+        public string ShortcutKey {
+            get {
+                return ((string)(this["ShortcutKey"]));
+            }
+            set {
+                this["ShortcutKey"] = value;
+            }
+        }
     }
 }

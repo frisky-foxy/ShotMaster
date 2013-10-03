@@ -16,7 +16,6 @@ namespace prjShotMaster
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // frmMain ThefrmMain = new frmMain();
             Application.Run(new frmMain());
         }
     }

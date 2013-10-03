@@ -14,20 +14,35 @@ namespace prjShotMaster
 {
     public partial class frmMain : Form
     {
-        public CActionManager actionManager = new CActionManager();
+        public CActionManager actionManager;
         private bool b_minimize_on_close = true;
         private static string AC_TAG_PAUSE = "Pause";
         private static string AC_TAG_START = "Start";
+        private int timeToActionDefault = 0;
 
         public frmMain()
         {
             InitializeComponent();
+            // validate DestinationFolder
+            string path = Properties.Settings.Default.DestinationFolder;
+            // если путь относительный (без ":"), считаем, что относительно Рабочего стола текущего пользователя
+            if (path.IndexOf(':') < 0)
+            {
+                // f.e., C:\Users\Username\Desktop
+                path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
+                Properties.Settings.Default.DestinationFolder = path;
+                Properties.Settings.Default.Save();
+            }
+            // set manager
+            actionManager = new CActionManager();
+            // show settings
             fillSettingsControls();
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
             // init
             pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
+            shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             // Start
             actionManager.Start();
             // on start
@@ -38,15 +53,16 @@ namespace prjShotMaster
         {
             // глобальный перехват клавы
             List<Keys> PressedKeys = CInterceptKeys.KeysDown;
-            // Ctrl + L + K - в настройках хранить
+            // Ctrl + K + J - в настройках хранится
+            // string[] arr = (Properties.Settings.Default.ShortcutKey as String).Split('+');
             if (
                 (
                     PressedKeys.Contains(Keys.Control)
                     || PressedKeys.Contains(Keys.LControlKey)
                     || PressedKeys.Contains(Keys.RControlKey)
                 )
-                && PressedKeys.Contains(Keys.L)
                 && PressedKeys.Contains(Keys.K)
+                && PressedKeys.Contains(Keys.J)
             )
             {
                 shotNow(null, null);
@@ -63,9 +79,8 @@ namespace prjShotMaster
             else
             {
                 shotNow(sender, e); // on exit
-                actionManager.Stop();
                 CInterceptKeys.UnHook(); // UnHook
-                // Application.Exit();
+                actionManager.Stop();
             }
         }
 
@@ -83,11 +98,14 @@ namespace prjShotMaster
 
         private void shotNow(object sender, EventArgs e)
         {
+            tmrDefault.Stop();
             // if (is_visible) Hide();
             double tmp_opacity = this.Opacity;
             this.Opacity = 0;
             actionManager.Shot();
-            this.Opacity = tmp_opacity;            
+            this.Opacity = tmp_opacity;
+            timeToActionDefault = tmrDefault.Interval / 1000;
+            tmrDefault.Start();
         }
 
         private void pauseStart(object sender, EventArgs e)
@@ -96,11 +114,13 @@ namespace prjShotMaster
             {
                 shotNow(sender, e);
                 actionManager.Stop();
+                tmrDefault.Stop();
                 (sender as ToolStripMenuItem).Tag = AC_TAG_START;
             }
             else if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_START)
             {
                 actionManager.Start();
+                tmrDefault.Start();
                 shotNow(sender, e);
                 (sender as ToolStripMenuItem).Tag = AC_TAG_PAUSE;
             }
@@ -108,16 +128,7 @@ namespace prjShotMaster
 
         private void openDestFolder(object sender, EventArgs e)
         {
-            string path = Properties.Settings.Default.DestinationFolder;
-            // если путь относительный (без ":"), считаем, что относительно Рабочего стола текущего пользователя
-            if (path.IndexOf(':') < 0)
-            {
-                // f.e., C:\Users\Username\Desktop
-                path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
-                Properties.Settings.Default.DestinationFolder = path;
-                Properties.Settings.Default.Save();
-            }
-            Process.Start(path);
+            Process.Start(Properties.Settings.Default.DestinationFolder);
         }
 
         private void openGitHubLink(object sender, EventArgs e)
@@ -134,6 +145,7 @@ namespace prjShotMaster
 
         private void btntbDestinationFolderDefault_Click(object sender, EventArgs e)
         {
+            fbd.SelectedPath = Properties.Settings.Default.DestinationFolder;
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 tbDestinationFolderDefault.Text = fbd.SelectedPath;
@@ -142,6 +154,7 @@ namespace prjShotMaster
 
         private void applySettingsDefault(object sender, EventArgs e)
         {
+            Enabled = false;
             Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
             Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
             Properties.Settings.Default.TimerIntervalS = Convert.ToInt32(tbTimerIntervalDefault.Text);
@@ -150,6 +163,7 @@ namespace prjShotMaster
             Properties.Settings.Default.DestinationFolderS = tbDestinationFolderDefault.Text;
             Properties.Settings.Default.DestinationFolderW = tbDestinationFolderDefault.Text;
             Properties.Settings.Default.Save();
+            Enabled = true;
 
             actionManager.applySettings();
             fillSettingsControls();
@@ -160,6 +174,28 @@ namespace prjShotMaster
             tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
             tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
             cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
+            tmrDefault.Stop();
+            tmrDefault.Interval = Properties.Settings.Default.TimerInterval * 1000;
+            timeToActionDefault = tmrDefault.Interval / 1000;
+            tmrDefault.Start();
+        }
+
+        private void tmrDefault_Tick(object sender, EventArgs e)
+        {
+            timeToActionDefault = (sender as Timer).Interval / 1000;
+        }
+
+        private void tmrOneSecond_Tick(object sender, EventArgs e)
+        {
+            timeToActionDefault--;
+            if (timeToActionDefault > 0)
+            {
+                Text = timeToActionDefault.ToString();
+            }
+            else
+            {
+                Text = "Shot!";
+            }
         }
     }
 }

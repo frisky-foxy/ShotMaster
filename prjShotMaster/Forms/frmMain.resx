@@ -564,6 +564,9 @@
   <data name="pauseToolStripMenuItem.Text" xml:space="preserve">
     <value>Pause / Start</value>
   </data>
+  <data name="shotNowToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
+    <value />
+  </data>
   <data name="shotNowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 24</value>
   </data>
@@ -6789,6 +6792,12 @@
   </data>
   <metadata name="fbd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>569, 21</value>
+  </metadata>
+  <metadata name="tmrDefault.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>645, 21</value>
+  </metadata>
+  <metadata name="tmrOneSecond.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>771, 21</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -13051,6 +13060,18 @@
   </data>
   <data name="&gt;&gt;fbd.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tmrDefault.Name" xml:space="preserve">
+    <value>tmrDefault</value>
+  </data>
+  <data name="&gt;&gt;tmrDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tmrOneSecond.Name" xml:space="preserve">
+    <value>tmrOneSecond</value>
+  </data>
+  <data name="&gt;&gt;tmrOneSecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>

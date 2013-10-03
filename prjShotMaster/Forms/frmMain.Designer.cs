@@ -56,6 +56,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.od = new System.Windows.Forms.OpenFileDialog();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -228,17 +229,26 @@
             resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.DoubleClick += new System.EventHandler(this.ntfIcn_DoubleClick);
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMain
             // 
             this.AcceptButton = this.btnApplyDefault;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
             this.ShowInTaskbar = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlSettingsDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.PerformLayout();
@@ -282,6 +292,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

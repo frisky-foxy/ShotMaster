@@ -31,7 +31,7 @@ namespace prjShotMaster
             actionManager.Start();
             pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             // on start
-            actionManager.Shot();
+            shotNow(null, null);
         }
 
         private void InterceptKeys_KeyUp(Keys Key)
@@ -49,7 +49,7 @@ namespace prjShotMaster
                 && PressedKeys.Contains(Keys.K)
             )
             {
-                actionManager.Shot();
+                shotNow(null, null);
             }
         }
 
@@ -58,13 +58,14 @@ namespace prjShotMaster
             if (b_minimize_on_close)
             {
                 e.Cancel = true;
-                Visible = false;
+                Hide();
             }
             else
             {
-                actionManager.Shot(); // on exit
+                shotNow(sender, e); // on exit
                 actionManager.Stop();
                 CInterceptKeys.UnHook(); // UnHook
+                // Application.Exit();
             }
         }
 
@@ -77,21 +78,25 @@ namespace prjShotMaster
 
         private void shotNow(object sender, EventArgs e)
         {
+            // if (is_visible) Hide();
+            double tmp_opacity = this.Opacity;
+            this.Opacity = 0;
             actionManager.Shot();
+            this.Opacity = tmp_opacity;            
         }
 
         private void pauseStart(object sender, EventArgs e)
         {
             if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_PAUSE)
             {
-                actionManager.Shot();
+                shotNow(sender, e);
                 actionManager.Stop();
                 (sender as ToolStripMenuItem).Tag = AC_TAG_START;
             }
             else if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_START)
             {
                 actionManager.Start();
-                actionManager.Shot();
+                shotNow(sender, e);
                 (sender as ToolStripMenuItem).Tag = AC_TAG_PAUSE;
             }
         }
@@ -135,6 +140,16 @@ namespace prjShotMaster
             tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
             tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
             cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

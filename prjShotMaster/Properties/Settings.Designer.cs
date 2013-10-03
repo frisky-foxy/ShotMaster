@@ -226,5 +226,17 @@ namespace prjShotMaster.Properties {
                 this["DeviceIndexW"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/resteem/ShotMaster")]
+        public string GitHubLink {
+            get {
+                return ((string)(this["GitHubLink"]));
+            }
+            set {
+                this["GitHubLink"] = value;
+            }
+        }
     }
 }

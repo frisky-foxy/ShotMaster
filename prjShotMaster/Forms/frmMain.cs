@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 using prjShotMaster.Actions;
 
 namespace prjShotMaster
@@ -25,11 +26,10 @@ namespace prjShotMaster
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
-            // hide
-            Visible = false;
+            // init
+            pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             // Start
             actionManager.Start();
-            pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             // on start
             shotNow(null, null);
         }
@@ -70,6 +70,11 @@ namespace prjShotMaster
         }
 
         /* Menu actions */
+        private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
+        }
+
         private void exitApp(object sender, EventArgs e)
         {
             b_minimize_on_close = false;
@@ -110,7 +115,12 @@ namespace prjShotMaster
                 // f.e., C:\Users\Username\Desktop
                 path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
             }
-            System.Diagnostics.Process.Start(path);
+            Process.Start(path);
+        }
+
+        private void openGitHubLink(object sender, EventArgs e)
+        {
+            Process.Start(Properties.Settings.Default.GitHubLink);
         }
         /* /Menu actions */
 
@@ -140,16 +150,6 @@ namespace prjShotMaster
             tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
             tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
             cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-            Hide();
         }
     }
 }

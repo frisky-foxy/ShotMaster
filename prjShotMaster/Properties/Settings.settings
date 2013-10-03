@@ -53,5 +53,8 @@
     <Setting Name="DeviceIndexW" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">-1</Value>
     </Setting>
+    <Setting Name="GitHubLink" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/resteem/ShotMaster</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

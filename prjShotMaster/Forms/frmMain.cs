@@ -114,6 +114,8 @@ namespace prjShotMaster
             {
                 // f.e., C:\Users\Username\Desktop
                 path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
+                Properties.Settings.Default.DestinationFolder = path;
+                Properties.Settings.Default.Save();
             }
             Process.Start(path);
         }
@@ -128,6 +130,14 @@ namespace prjShotMaster
         {
             WindowState = FormWindowState.Normal;
             Show();
+        }
+
+        private void btntbDestinationFolderDefault_Click(object sender, EventArgs e)
+        {
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                tbDestinationFolderDefault.Text = fbd.SelectedPath;
+            }
         }
 
         private void applySettingsDefault(object sender, EventArgs e)

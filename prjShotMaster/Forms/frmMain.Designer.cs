@@ -54,8 +54,8 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.od = new System.Windows.Forms.OpenFileDialog();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
+            this.fbd = new System.Windows.Forms.FolderBrowserDialog();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -66,17 +66,17 @@
             // 
             // pnlSettingsDefault
             // 
+            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Controls.Add(this.pnlPlaySoundDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlTimerIntervalDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlDestinationFolderDefault);
             this.pnlSettingsDefault.Controls.Add(this.btnApplyDefault);
-            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
             this.pnlSettingsDefault.Name = "pnlSettingsDefault";
             // 
             // pnlPlaySoundDefault
             // 
-            this.pnlPlaySoundDefault.Controls.Add(this.cbPlaySoundDefault);
             resources.ApplyResources(this.pnlPlaySoundDefault, "pnlPlaySoundDefault");
+            this.pnlPlaySoundDefault.Controls.Add(this.cbPlaySoundDefault);
             this.pnlPlaySoundDefault.Name = "pnlPlaySoundDefault";
             // 
             // cbPlaySoundDefault
@@ -87,10 +87,10 @@
             // 
             // pnlTimerIntervalDefault
             // 
+            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault1);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault);
             this.pnlTimerIntervalDefault.Controls.Add(this.tbTimerIntervalDefault);
-            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
             this.pnlTimerIntervalDefault.Name = "pnlTimerIntervalDefault";
             // 
             // lblTimerIntervalDefault1
@@ -110,10 +110,10 @@
             // 
             // pnlDestinationFolderDefault
             // 
+            resources.ApplyResources(this.pnlDestinationFolderDefault, "pnlDestinationFolderDefault");
             this.pnlDestinationFolderDefault.Controls.Add(this.btntbDestinationFolderDefault);
             this.pnlDestinationFolderDefault.Controls.Add(this.lblDestinationFolderDefault);
             this.pnlDestinationFolderDefault.Controls.Add(this.tbDestinationFolderDefault);
-            resources.ApplyResources(this.pnlDestinationFolderDefault, "pnlDestinationFolderDefault");
             this.pnlDestinationFolderDefault.Name = "pnlDestinationFolderDefault";
             // 
             // btntbDestinationFolderDefault
@@ -121,6 +121,7 @@
             resources.ApplyResources(this.btntbDestinationFolderDefault, "btntbDestinationFolderDefault");
             this.btntbDestinationFolderDefault.Name = "btntbDestinationFolderDefault";
             this.btntbDestinationFolderDefault.UseVisualStyleBackColor = true;
+            this.btntbDestinationFolderDefault.Click += new System.EventHandler(this.btntbDestinationFolderDefault_Click);
             // 
             // lblDestinationFolderDefault
             // 
@@ -221,10 +222,6 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
-            // od
-            // 
-            this.od.FileName = "openFileDialog1";
-            // 
             // ntfIcn
             // 
             this.ntfIcn.ContextMenuStrip = this.cmsNotify;
@@ -274,7 +271,6 @@
         private System.Windows.Forms.ContextMenuStrip cmsNotify;
         private System.Windows.Forms.MenuStrip msMainMenu;
         private System.Windows.Forms.ToolStripMenuItem tsmiFile;
-        private System.Windows.Forms.OpenFileDialog od;
         private System.Windows.Forms.NotifyIcon ntfIcn;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -285,6 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.FolderBrowserDialog fbd;
     }
 }
 

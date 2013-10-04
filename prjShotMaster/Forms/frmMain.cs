@@ -18,7 +18,32 @@ namespace prjShotMaster
         private bool b_minimize_on_close = true;
         private static string AC_TAG_PAUSE = "Pause";
         private static string AC_TAG_START = "Start";
-        private int timeToActionDefault = 0;
+        private int _timeToActionDefault = 0;
+        public int timeToActionDefault
+        {
+            get { return _timeToActionDefault; }
+            set
+            {
+                _timeToActionDefault = value;
+                if (_timeToActionDefault > 0)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(_timeToActionDefault);
+                    tsslblCountdown.Text = string.Format(
+                        // "{0:D2}h:{1:D2}m:{2:D2}s",
+                        "{0:D2}:{1:D2}:{2:D2}",
+                        t.Hours,
+                        t.Minutes,
+                        t.Seconds
+                    );
+                    ntfIcn.Text = "(" + _timeToActionDefault.ToString() + ") " + ntfIcnText;
+                }
+                else
+                {
+                    tsslblCountdown.Text = "Shot!";
+                    ntfIcn.Text = ntfIcnText;
+                }
+            }
+        }
         private string ntfIcnText;
 
         public frmMain()
@@ -42,14 +67,13 @@ namespace prjShotMaster
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
             // init
-            pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
             ntfIcnText = ntfIcn.Text;
             // Start
             actionManager.Start();
             // on start
-            shotNow(null, null);
+            Shot();
         }
 
         private void InterceptKeys_KeyUp(Keys Key)
@@ -68,7 +92,7 @@ namespace prjShotMaster
                 && PressedKeys.Contains(Keys.J)
             )
             {
-                shotNow(null, null);
+                Shot();
             }
         }
 
@@ -83,7 +107,7 @@ namespace prjShotMaster
             }
             else
             {
-                shotNow(sender, e); // on exit
+                Shot(); // on exit
                 CInterceptKeys.UnHook(); // UnHook
                 actionManager.Stop();
             }
@@ -101,10 +125,23 @@ namespace prjShotMaster
             Close();
         }
 
-        private void shotNow(object sender, EventArgs e)
+        private void pauseStart(object sender, EventArgs e)
+        {
+            if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_PAUSE)
+            {
+                Stop();
+                (sender as ToolStripMenuItem).Tag = AC_TAG_START;
+            }
+            else if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_START)
+            {
+                Start();
+                (sender as ToolStripMenuItem).Tag = AC_TAG_PAUSE;
+            }
+        }
+
+        private void Shot()
         {
             tmrDefault.Stop();
-            // if (is_visible) Hide();
             double tmp_opacity = this.Opacity;
             this.Opacity = 0;
             actionManager.Shot();
@@ -113,22 +150,40 @@ namespace prjShotMaster
             tmrDefault.Start();
         }
 
-        private void pauseStart(object sender, EventArgs e)
+        private void Shot(object sender, EventArgs e)
         {
-            if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_PAUSE)
-            {
-                shotNow(sender, e);
-                actionManager.Stop();
-                tmrDefault.Stop();
-                (sender as ToolStripMenuItem).Tag = AC_TAG_START;
-            }
-            else if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_START)
-            {
-                actionManager.Start();
-                tmrDefault.Start();
-                shotNow(sender, e);
-                (sender as ToolStripMenuItem).Tag = AC_TAG_PAUSE;
-            }
+            Shot();
+        }
+
+        private void Start(object sender, EventArgs e)
+        {
+            Start();
+        }
+
+        private void Start()
+        {
+            actionManager.Start();
+            tmrDefault.Start();
+            tmrOneSecond.Start();
+            startToolStripMenuItem.Visible = false;
+            stopToolStripMenuItem.Visible = true;
+            Shot();
+        }
+
+        private void Stop()
+        {
+            Shot();
+            actionManager.Stop();
+            tmrDefault.Stop();
+            tmrOneSecond.Stop();
+            timeToActionDefault = tmrDefault.Interval / 1000;
+            stopToolStripMenuItem.Visible = false;
+            startToolStripMenuItem.Visible = true;
+        }
+
+        private void Stop(object sender, EventArgs e)
+        {
+            Stop();
         }
 
         private void openDestFolder(object sender, EventArgs e)
@@ -192,22 +247,6 @@ namespace prjShotMaster
         private void tmrOneSecond_Tick(object sender, EventArgs e)
         {
             timeToActionDefault--;
-            if (timeToActionDefault > 0)
-            {
-                TimeSpan t = TimeSpan.FromSeconds(timeToActionDefault);
-                tsslblCountdown.Text = string.Format(
-                    // "{0:D2}h:{1:D2}m:{2:D2}s",
-                    "{0:D2}:{1:D2}:{2:D2}",
-                    t.Hours,
-                    t.Minutes,
-                    t.Seconds
-                );
-            }
-            else
-            {
-                tsslblCountdown.Text = "Shot!";
-            }
-            ntfIcn.Text = "(" + timeToActionDefault.ToString() + ") " + ntfIcnText;
         }
     }
 }

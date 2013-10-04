@@ -46,7 +46,8 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.tsmiFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.pauseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shotNowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openDestinationFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -169,7 +170,8 @@
             // tsmiFile
             // 
             this.tsmiFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pauseToolStripMenuItem,
+            this.stopToolStripMenuItem,
+            this.startToolStripMenuItem,
             this.shotNowToolStripMenuItem,
             this.openDestinationFolderToolStripMenuItem,
             this.toolStripMenuItem1,
@@ -177,17 +179,23 @@
             this.tsmiFile.Name = "tsmiFile";
             resources.ApplyResources(this.tsmiFile, "tsmiFile");
             // 
-            // pauseToolStripMenuItem
+            // stopToolStripMenuItem
             // 
-            this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
-            resources.ApplyResources(this.pauseToolStripMenuItem, "pauseToolStripMenuItem");
-            this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseStart);
+            this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
+            resources.ApplyResources(this.stopToolStripMenuItem, "stopToolStripMenuItem");
+            this.stopToolStripMenuItem.Click += new System.EventHandler(this.Stop);
+            // 
+            // startToolStripMenuItem
+            // 
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
+            this.startToolStripMenuItem.Click += new System.EventHandler(this.Start);
             // 
             // shotNowToolStripMenuItem
             // 
             this.shotNowToolStripMenuItem.Name = "shotNowToolStripMenuItem";
             resources.ApplyResources(this.shotNowToolStripMenuItem, "shotNowToolStripMenuItem");
-            this.shotNowToolStripMenuItem.Click += new System.EventHandler(this.shotNow);
+            this.shotNowToolStripMenuItem.Click += new System.EventHandler(this.Shot);
             // 
             // openDestinationFolderToolStripMenuItem
             // 
@@ -225,8 +233,8 @@
             // 
             // aboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             // 
             // ntfIcn
             // 
@@ -309,7 +317,6 @@
         private System.Windows.Forms.ToolStripMenuItem shotNowToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem openDestinationFolderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.FolderBrowserDialog fbd;
@@ -318,6 +325,8 @@
         private System.Windows.Forms.StatusStrip ss;
         private System.Windows.Forms.ToolStripStatusLabel tsslblCountdown;
         private Components.CToolStripMenuItemLink gitHubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
     }
 }
 

@@ -161,11 +161,23 @@
   <data name="tsmiFile.Text" xml:space="preserve">
     <value>Файл</value>
   </data>
+  <data name="stopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
+  <data name="stopToolStripMenuItem.Text" xml:space="preserve">
+    <value>Стоп</value>
+  </data>
   <data name="pauseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
   </data>
   <data name="pauseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Пауза / Старт</value>
+    <value>Пауза</value>
+  </data>
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Старт</value>
   </data>
   <data name="shotNowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
@@ -12549,6 +12561,10 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Настройки</value>

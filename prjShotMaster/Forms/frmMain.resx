@@ -459,11 +459,20 @@
   <metadata name="msMainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>23, 17</value>
   </metadata>
-  <data name="pauseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="stopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 24</value>
   </data>
-  <data name="pauseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Pause / Start</value>
+  <data name="stopToolStripMenuItem.Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 24</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="startToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="shotNowToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
     <value />
@@ -499,13 +508,16 @@
     <value>Segoe UI, 9pt, style=Underline</value>
   </data>
   <data name="gitHubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 24</value>
+    <value>130, 24</value>
   </data>
   <data name="gitHubToolStripMenuItem.Text" xml:space="preserve">
     <value>GitHub</value>
   </data>
+  <data name="aboutToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 24</value>
+    <value>130, 24</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>About…</value>
@@ -12956,10 +12968,16 @@
   <data name="&gt;&gt;tsmiFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pauseToolStripMenuItem.Name" xml:space="preserve">
-    <value>pauseToolStripMenuItem</value>
+  <data name="&gt;&gt;stopToolStripMenuItem.Name" xml:space="preserve">
+    <value>stopToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;pauseToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;stopToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
+    <value>startToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;shotNowToolStripMenuItem.Name" xml:space="preserve">

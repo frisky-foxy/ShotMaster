@@ -58,12 +58,15 @@
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
             this.tmrDefault = new System.Windows.Forms.Timer(this.components);
             this.tmrOneSecond = new System.Windows.Forms.Timer(this.components);
+            this.ss = new System.Windows.Forms.StatusStrip();
+            this.tsslblCountdown = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
             this.pnlDestinationFolderDefault.SuspendLayout();
             this.cmsNotify.SuspendLayout();
             this.msMainMenu.SuspendLayout();
+            this.ss.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSettingsDefault
@@ -240,17 +243,30 @@
             this.tmrOneSecond.Interval = 1000;
             this.tmrOneSecond.Tick += new System.EventHandler(this.tmrOneSecond_Tick);
             // 
+            // ss
+            // 
+            this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslblCountdown});
+            resources.ApplyResources(this.ss, "ss");
+            this.ss.Name = "ss";
+            this.ss.SizingGrip = false;
+            // 
+            // tsslblCountdown
+            // 
+            this.tsslblCountdown.Name = "tsslblCountdown";
+            resources.ApplyResources(this.tsslblCountdown, "tsslblCountdown");
+            // 
             // frmMain
             // 
             this.AcceptButton = this.btnApplyDefault;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ss);
             this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
-            this.ShowInTaskbar = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.pnlSettingsDefault.ResumeLayout(false);
             this.pnlPlaySoundDefault.ResumeLayout(false);
@@ -262,6 +278,8 @@
             this.cmsNotify.ResumeLayout(false);
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
+            this.ss.ResumeLayout(false);
+            this.ss.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,6 +315,8 @@
         private System.Windows.Forms.FolderBrowserDialog fbd;
         private System.Windows.Forms.Timer tmrDefault;
         private System.Windows.Forms.Timer tmrOneSecond;
+        private System.Windows.Forms.StatusStrip ss;
+        private System.Windows.Forms.ToolStripStatusLabel tsslblCountdown;
     }
 }
 

@@ -74,6 +74,7 @@ namespace prjShotMaster
             if (b_minimize_on_close)
             {
                 e.Cancel = true;
+                ShowInTaskbar = false;
                 Hide();
             }
             else
@@ -140,6 +141,7 @@ namespace prjShotMaster
         private void ntfIcn_DoubleClick(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
+            ShowInTaskbar = true;
             Show();
         }
 
@@ -190,11 +192,17 @@ namespace prjShotMaster
             timeToActionDefault--;
             if (timeToActionDefault > 0)
             {
-                Text = timeToActionDefault.ToString();
+                TimeSpan t = TimeSpan.FromSeconds(timeToActionDefault);
+                tsslblCountdown.Text = string.Format(
+                    "{0:D2}h:{1:D2}m:{2:D2}s",
+                    t.Hours,
+                    t.Minutes,
+                    t.Seconds
+                );
             }
             else
             {
-                Text = "Shot!";
+                tsslblCountdown.Text = "Shot!";
             }
         }
     }

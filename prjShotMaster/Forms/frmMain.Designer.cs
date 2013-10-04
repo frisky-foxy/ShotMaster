@@ -216,6 +216,7 @@
             // 
             // gitHubToolStripMenuItem
             // 
+            this.gitHubToolStripMenuItem.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
             this.gitHubToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";

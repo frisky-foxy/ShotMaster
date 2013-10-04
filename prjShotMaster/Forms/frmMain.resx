@@ -6718,9 +6718,6 @@
   <data name="ntfIcn.Text" xml:space="preserve">
     <value>Double click to show Settings form</value>
   </data>
-  <data name="ntfIcn.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <metadata name="fbd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>569, 21</value>
   </metadata>

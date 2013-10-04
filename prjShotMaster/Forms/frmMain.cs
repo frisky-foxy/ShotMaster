@@ -76,6 +76,7 @@ namespace prjShotMaster
             {
                 e.Cancel = true;
                 ShowInTaskbar = false;
+                ntfIcn.Visible = true;
                 Hide();
             }
             else
@@ -90,11 +91,6 @@ namespace prjShotMaster
         private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
         {
             Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
-        }
-
-        private void openGitHubLink(object sender, EventArgs e)
-        {
-            Process.Start(Properties.Settings.Default.GitHubLink);
         }
 
         private void exitApp(object sender, EventArgs e)
@@ -143,6 +139,7 @@ namespace prjShotMaster
         {
             WindowState = FormWindowState.Normal;
             ShowInTaskbar = true;
+            ntfIcn.Visible = false;
             Show();
         }
 
@@ -208,6 +205,8 @@ namespace prjShotMaster
             {
                 tsslblCountdown.Text = "Shot!";
             }
+            // string str = ntfIcn.Text;
+            // ntfIcn.Text = "(" + timeToActionDefault.ToString() + ") " + ntfIcn.Text;
         }
     }
 }

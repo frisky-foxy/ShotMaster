@@ -19,6 +19,7 @@ namespace prjShotMaster
         private static string AC_TAG_PAUSE = "Pause";
         private static string AC_TAG_START = "Start";
         private int timeToActionDefault = 0;
+        private string ntfIcnText;
 
         public frmMain()
         {
@@ -44,6 +45,7 @@ namespace prjShotMaster
             pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
+            ntfIcnText = ntfIcn.Text;
             // Start
             actionManager.Start();
             // on start
@@ -205,8 +207,7 @@ namespace prjShotMaster
             {
                 tsslblCountdown.Text = "Shot!";
             }
-            // string str = ntfIcn.Text;
-            // ntfIcn.Text = "(" + timeToActionDefault.ToString() + ") " + ntfIcn.Text;
+            ntfIcn.Text = "(" + timeToActionDefault.ToString() + ") " + ntfIcnText;
         }
     }
 }

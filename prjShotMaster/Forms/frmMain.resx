@@ -124,26 +124,6 @@
   <data name="pnlPlaySoundDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cbPlaySoundDefault.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbPlaySoundDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cbPlaySoundDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="cbPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 21</value>
-  </data>
-  <data name="cbPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="cbPlaySoundDefault.Text" xml:space="preserve">
-    <value>Play sound</value>
-  </data>
   <data name="&gt;&gt;cbPlaySoundDefault.Name" xml:space="preserve">
     <value>cbPlaySoundDefault</value>
   </data>
@@ -156,12 +136,14 @@
   <data name="&gt;&gt;cbPlaySoundDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pnlPlaySoundDefault.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 81</value>
   </data>
   <data name="pnlPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>547, 32</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pnlPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
@@ -180,24 +162,6 @@
   <data name="pnlTimerIntervalDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="lblTimerIntervalDefault1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTimerIntervalDefault1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTimerIntervalDefault1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 8</value>
-  </data>
-  <data name="lblTimerIntervalDefault1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 17</value>
-  </data>
-  <data name="lblTimerIntervalDefault1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblTimerIntervalDefault1.Text" xml:space="preserve">
-    <value>s</value>
-  </data>
   <data name="&gt;&gt;lblTimerIntervalDefault1.Name" xml:space="preserve">
     <value>lblTimerIntervalDefault1</value>
   </data>
@@ -210,24 +174,6 @@
   <data name="&gt;&gt;lblTimerIntervalDefault1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblTimerIntervalDefault.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTimerIntervalDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="lblTimerIntervalDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 17</value>
-  </data>
-  <data name="lblTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lblTimerIntervalDefault.Text" xml:space="preserve">
-    <value>Timer interval</value>
-  </data>
   <data name="&gt;&gt;lblTimerIntervalDefault.Name" xml:space="preserve">
     <value>lblTimerIntervalDefault</value>
   </data>
@@ -239,15 +185,6 @@
   </data>
   <data name="&gt;&gt;lblTimerIntervalDefault.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="tbTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 5</value>
-  </data>
-  <data name="tbTimerIntervalDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
-  </data>
-  <data name="tbTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;tbTimerIntervalDefault.Name" xml:space="preserve">
     <value>tbTimerIntervalDefault</value>
@@ -285,24 +222,6 @@
   <data name="pnlDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="btntbDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="btntbDestinationFolderDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btntbDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 5</value>
-  </data>
-  <data name="btntbDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="btntbDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btntbDestinationFolderDefault.Text" xml:space="preserve">
-    <value>…</value>
-  </data>
   <data name="&gt;&gt;btntbDestinationFolderDefault.Name" xml:space="preserve">
     <value>btntbDestinationFolderDefault</value>
   </data>
@@ -315,21 +234,6 @@
   <data name="&gt;&gt;btntbDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblDestinationFolderDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="lblDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 23</value>
-  </data>
-  <data name="lblDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblDestinationFolderDefault.Text" xml:space="preserve">
-    <value>Destination folder</value>
-  </data>
   <data name="&gt;&gt;lblDestinationFolderDefault.Name" xml:space="preserve">
     <value>lblDestinationFolderDefault</value>
   </data>
@@ -340,18 +244,6 @@
     <value>pnlDestinationFolderDefault</value>
   </data>
   <data name="&gt;&gt;lblDestinationFolderDefault.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tbDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="tbDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 5</value>
-  </data>
-  <data name="tbDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 22</value>
-  </data>
-  <data name="tbDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;tbDestinationFolderDefault.Name" xml:space="preserve">
@@ -438,15 +330,201 @@
   <data name="&gt;&gt;pnlSettingsDefault.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="cbPlaySoundDefault.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbPlaySoundDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbPlaySoundDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="cbPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="cbPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="cbPlaySoundDefault.Text" xml:space="preserve">
+    <value>Play sound</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.Name" xml:space="preserve">
+    <value>cbPlaySoundDefault</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.Parent" xml:space="preserve">
+    <value>pnlPlaySoundDefault</value>
+  </data>
+  <data name="&gt;&gt;cbPlaySoundDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTimerIntervalDefault1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTimerIntervalDefault1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTimerIntervalDefault1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 8</value>
+  </data>
+  <data name="lblTimerIntervalDefault1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 17</value>
+  </data>
+  <data name="lblTimerIntervalDefault1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblTimerIntervalDefault1.Text" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Name" xml:space="preserve">
+    <value>lblTimerIntervalDefault1</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Parent" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTimerIntervalDefault.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTimerIntervalDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="lblTimerIntervalDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="lblTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblTimerIntervalDefault.Text" xml:space="preserve">
+    <value>Timer interval</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.Name" xml:space="preserve">
+    <value>lblTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.Parent" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;lblTimerIntervalDefault.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 5</value>
+  </data>
+  <data name="tbTimerIntervalDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="tbTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.Name" xml:space="preserve">
+    <value>tbTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.Parent" xml:space="preserve">
+    <value>pnlTimerIntervalDefault</value>
+  </data>
+  <data name="&gt;&gt;tbTimerIntervalDefault.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btntbDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btntbDestinationFolderDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btntbDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 5</value>
+  </data>
+  <data name="btntbDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="btntbDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btntbDestinationFolderDefault.Text" xml:space="preserve">
+    <value>…</value>
+  </data>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.Name" xml:space="preserve">
+    <value>btntbDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDestinationFolderDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="lblDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="lblDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblDestinationFolderDefault.Text" xml:space="preserve">
+    <value>Destination folder</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.Name" xml:space="preserve">
+    <value>lblDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;lblDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="tbDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 5</value>
+  </data>
+  <data name="tbDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 22</value>
+  </data>
+  <data name="tbDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbDestinationFolderDefault.Name" xml:space="preserve">
+    <value>tbDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;tbDestinationFolderDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbDestinationFolderDefault.Parent" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
+  </data>
+  <data name="&gt;&gt;tbDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="cmsNotify.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>357, 21</value>
   </metadata>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
   <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 28</value>
   </data>
@@ -456,23 +534,44 @@
   <data name="&gt;&gt;cmsNotify.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 24</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <metadata name="msMainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>23, 17</value>
   </metadata>
-  <data name="stopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 24</value>
+  <data name="msMainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="stopToolStripMenuItem.Text" xml:space="preserve">
-    <value>Stop</value>
+  <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 28</value>
   </data>
-  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 24</value>
+  <data name="msMainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="startToolStripMenuItem.Text" xml:space="preserve">
-    <value>Start</value>
+  <data name="msMainMenu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
-  <data name="startToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;msMainMenu.Name" xml:space="preserve">
+    <value>msMainMenu</value>
+  </data>
+  <data name="&gt;&gt;msMainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msMainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;msMainMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tsmiFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 24</value>
+  </data>
+  <data name="tsmiFile.Text" xml:space="preserve">
+    <value>&amp;File</value>
   </data>
   <data name="shotNowToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
     <value />
@@ -498,20 +597,11 @@
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="tsmiFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 24</value>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 24</value>
   </data>
-  <data name="tsmiFile.Text" xml:space="preserve">
-    <value>&amp;File</value>
-  </data>
-  <data name="gitHubToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Underline</value>
-  </data>
-  <data name="gitHubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
-  </data>
-  <data name="gitHubToolStripMenuItem.Text" xml:space="preserve">
-    <value>GitHub</value>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
   </data>
   <data name="aboutToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -521,36 +611,6 @@
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>About…</value>
-  </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
-  </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="msMainMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>563, 28</value>
-  </data>
-  <data name="msMainMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="msMainMenu.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;msMainMenu.Name" xml:space="preserve">
-    <value>msMainMenu</value>
-  </data>
-  <data name="&gt;&gt;msMainMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;msMainMenu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;msMainMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <metadata name="ntfIcn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>478, 21</value>
@@ -6742,9 +6802,6 @@
   <metadata name="ss.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>926, 21</value>
   </metadata>
-  <data name="tsslblCountdown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
   <data name="ss.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 192</value>
   </data>
@@ -6768,6 +6825,33 @@
   </data>
   <data name="&gt;&gt;ss.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tsslblCountdown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="stopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 24</value>
+  </data>
+  <data name="stopToolStripMenuItem.Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 24</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="startToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gitHubToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Underline</value>
+  </data>
+  <data name="gitHubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
+  </data>
+  <data name="gitHubToolStripMenuItem.Text" xml:space="preserve">
+    <value>GitHub</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -12968,18 +13052,6 @@
   <data name="&gt;&gt;tsmiFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;stopToolStripMenuItem.Name" xml:space="preserve">
-    <value>stopToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;stopToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
-    <value>startToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;shotNowToolStripMenuItem.Name" xml:space="preserve">
     <value>shotNowToolStripMenuItem</value>
   </data>
@@ -13009,12 +13081,6 @@
   </data>
   <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gitHubToolStripMenuItem.Name" xml:space="preserve">
-    <value>gitHubToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;gitHubToolStripMenuItem.Type" xml:space="preserve">
-    <value>prjShotMaster.Components.CToolStripMenuItemLink, prjShotMaster, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
     <value>aboutToolStripMenuItem</value>
@@ -13051,6 +13117,24 @@
   </data>
   <data name="&gt;&gt;tsslblCountdown.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stopToolStripMenuItem.Name" xml:space="preserve">
+    <value>stopToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;stopToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
+    <value>startToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gitHubToolStripMenuItem.Name" xml:space="preserve">
+    <value>gitHubToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gitHubToolStripMenuItem.Type" xml:space="preserve">
+    <value>prjShotMaster.Components.CToolStripMenuItemLink, prjShotMaster, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>

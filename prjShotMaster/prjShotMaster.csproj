@@ -66,6 +66,9 @@
     <Compile Include="Actions\CWebcamShotAction.cs" />
     <Compile Include="CActionManager.cs" />
     <Compile Include="CInterceptKeys.cs" />
+    <Compile Include="Components\CToolStripMenuItemLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>

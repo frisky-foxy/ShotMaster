@@ -59,5 +59,8 @@
     <Setting Name="ShortcutKey" Type="System.String" Scope="User">
       <Value Profile="(Default)">Ctrl + K + J</Value>
     </Setting>
+    <Setting Name="GitHubURI" Type="System.Uri" Scope="User">
+      <Value Profile="(Default)">https://github.com/resteem/ShotMaster</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

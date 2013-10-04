@@ -250,5 +250,17 @@ namespace prjShotMaster.Properties {
                 this["ShortcutKey"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/resteem/ShotMaster")]
+        public global::System.Uri GitHubURI {
+            get {
+                return ((global::System.Uri)(this["GitHubURI"]));
+            }
+            set {
+                this["GitHubURI"] = value;
+            }
+        }
     }
 }

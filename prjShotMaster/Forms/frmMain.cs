@@ -43,6 +43,7 @@ namespace prjShotMaster
             // init
             pauseToolStripMenuItem.Tag = AC_TAG_PAUSE;
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
+            gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
             // Start
             actionManager.Start();
             // on start
@@ -88,7 +89,12 @@ namespace prjShotMaster
         /* Menu actions */
         private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
         {
-            Cursor.Current = Cursors.Hand;
+            Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
+        }
+
+        private void openGitHubLink(object sender, EventArgs e)
+        {
+            Process.Start(Properties.Settings.Default.GitHubLink);
         }
 
         private void exitApp(object sender, EventArgs e)
@@ -131,11 +137,6 @@ namespace prjShotMaster
         {
             Process.Start(Properties.Settings.Default.DestinationFolder);
         }
-
-        private void openGitHubLink(object sender, EventArgs e)
-        {
-            Process.Start(Properties.Settings.Default.GitHubLink);
-        }
         /* /Menu actions */
 
         private void ntfIcn_DoubleClick(object sender, EventArgs e)
@@ -156,6 +157,7 @@ namespace prjShotMaster
 
         private void applySettingsDefault(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             Enabled = false;
             Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
             Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
@@ -165,10 +167,11 @@ namespace prjShotMaster
             Properties.Settings.Default.DestinationFolderS = tbDestinationFolderDefault.Text;
             Properties.Settings.Default.DestinationFolderW = tbDestinationFolderDefault.Text;
             Properties.Settings.Default.Save();
-            Enabled = true;
 
             actionManager.applySettings();
             fillSettingsControls();
+            Enabled = true;
+            Cursor.Current = Cursors.Default;
         }
 
         private void fillSettingsControls()
@@ -194,7 +197,8 @@ namespace prjShotMaster
             {
                 TimeSpan t = TimeSpan.FromSeconds(timeToActionDefault);
                 tsslblCountdown.Text = string.Format(
-                    "{0:D2}h:{1:D2}m:{2:D2}s",
+                    // "{0:D2}h:{1:D2}m:{2:D2}s",
+                    "{0:D2}:{1:D2}:{2:D2}",
                     t.Hours,
                     t.Minutes,
                     t.Seconds

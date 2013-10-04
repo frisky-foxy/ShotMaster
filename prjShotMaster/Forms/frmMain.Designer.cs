@@ -52,7 +52,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gitHubToolStripMenuItem = new prjShotMaster.Components.CToolStripMenuItemLink();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
@@ -219,7 +219,7 @@
             resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
             this.gitHubToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            this.gitHubToolStripMenuItem.Click += new System.EventHandler(this.openGitHubLink);
+            this.gitHubToolStripMenuItem.URI = null;
             this.gitHubToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gitHubToolStripMenuItem_MouseMove);
             // 
             // aboutToolStripMenuItem
@@ -310,13 +310,13 @@
         private System.Windows.Forms.ToolStripMenuItem openDestinationFolderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.FolderBrowserDialog fbd;
         private System.Windows.Forms.Timer tmrDefault;
         private System.Windows.Forms.Timer tmrOneSecond;
         private System.Windows.Forms.StatusStrip ss;
         private System.Windows.Forms.ToolStripStatusLabel tsslblCountdown;
+        private Components.CToolStripMenuItemLink gitHubToolStripMenuItem;
     }
 }
 

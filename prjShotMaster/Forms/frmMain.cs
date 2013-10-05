@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
 using prjShotMaster.Actions;
 
 namespace prjShotMaster
@@ -16,7 +15,7 @@ namespace prjShotMaster
     {
         public CActionManager actionManager;
         private bool b_minimize_on_close = true;
-        private bool b_shot_on_start = false;
+        private bool b_start_on_run = false;
         private bool b_shot_on_exit = true;
         private int _timeToActionDefault = 0;
         public int timeToActionDefault
@@ -24,24 +23,20 @@ namespace prjShotMaster
             get { return _timeToActionDefault; }
             set
             {
+                if (value < 0)
+                {
+                    value = 0;
+                }
                 _timeToActionDefault = value;
-                if (_timeToActionDefault > 0)
-                {
-                    TimeSpan t = TimeSpan.FromSeconds(_timeToActionDefault);
-                    tsslblCountdown.Text = string.Format(
-                        // "{0:D2}h:{1:D2}m:{2:D2}s",
-                        "{0:D2}:{1:D2}:{2:D2}",
-                        t.Hours,
-                        t.Minutes,
-                        t.Seconds
-                    );
-                    ntfIcn.Text = "(" + _timeToActionDefault.ToString() + ") " + ntfIcnText;
-                }
-                else
-                {
-                    tsslblCountdown.Text = "Shot!";
-                    ntfIcn.Text = ntfIcnText;
-                }
+                TimeSpan t = TimeSpan.FromSeconds(_timeToActionDefault);
+                tsslblCountdown.Text = string.Format(
+                    // "{0:D2}h:{1:D2}m:{2:D2}s",
+                    "{0:D2}:{1:D2}:{2:D2}",
+                    t.Hours,
+                    t.Minutes,
+                    t.Seconds
+                );
+                ntfIcn.Text = "(" + _timeToActionDefault.ToString() + ") " + ntfIcnText;
             }
         }
         private string ntfIcnText;
@@ -71,9 +66,9 @@ namespace prjShotMaster
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
             // on start
-            if (b_shot_on_start)
+            if (b_start_on_run)
             {
-                Start();
+                State = FS_START;
             }
         }
 
@@ -115,75 +110,6 @@ namespace prjShotMaster
                 CInterceptKeys.UnHook(); // UnHook
                 actionManager.Stop();
             }
-        }
-
-        /* Menu actions */
-        private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
-        {
-            Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
-        }
-
-        private void exitApp(object sender, EventArgs e)
-        {
-            b_minimize_on_close = false;
-            Close();
-        }
-
-        private void openDestFolder(object sender, EventArgs e)
-        {
-            Process.Start(Properties.Settings.Default.DestinationFolder);
-        }
-
-        private void Stop(object sender, EventArgs e)
-        {
-            Stop();
-        }
-
-        private void Shot(object sender, EventArgs e)
-        {
-            Shot();
-        }
-
-        private void Start(object sender, EventArgs e)
-        {
-            Start();
-        }
-        /* /Menu actions */
-
-        private void Shot()
-        {
-            tmrDefault.Stop();
-            double tmp_opacity = this.Opacity;
-            this.Opacity = 0;
-            actionManager.Shot();
-            this.Opacity = tmp_opacity;
-            timeToActionDefault = tmrDefault.Interval / 1000;
-            tmrDefault.Start();
-        }
-
-        private void Start()
-        {
-            actionManager.Start();
-            tmrDefault.Start();
-            tmrOneSecond.Start();
-            startToolStripMenuItem.Visible = false;
-            stopToolStripMenuItem.Visible = true;
-            tsbtnStart.Visible = false;
-            tsbtnStop.Visible = true;
-            Shot();
-        }
-
-        private void Stop()
-        {
-            Shot();
-            actionManager.Stop();
-            tmrDefault.Stop();
-            tmrOneSecond.Stop();
-            timeToActionDefault = tmrDefault.Interval / 1000;
-            stopToolStripMenuItem.Visible = false;
-            startToolStripMenuItem.Visible = true;
-            tsbtnStart.Visible = false;
-            tsbtnStop.Visible = true;
         }
 
         private void ntfIcn_DoubleClick(object sender, EventArgs e)

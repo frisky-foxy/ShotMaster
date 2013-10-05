@@ -49,6 +49,10 @@ namespace prjShotMaster
         public frmMain()
         {
             InitializeComponent();
+            // init
+            shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
+            gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
+            ntfIcnText = ntfIcn.Text;
             // validate DestinationFolder
             string path = Properties.Settings.Default.DestinationFolder;
             // если путь относительный (без ":"), считаем, что относительно Рабочего стола текущего пользователя
@@ -66,10 +70,6 @@ namespace prjShotMaster
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
-            // init
-            shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
-            gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
-            ntfIcnText = ntfIcn.Text;
             // Start
             actionManager.Start();
             // on start

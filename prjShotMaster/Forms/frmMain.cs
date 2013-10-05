@@ -16,8 +16,8 @@ namespace prjShotMaster
     {
         public CActionManager actionManager;
         private bool b_minimize_on_close = true;
-        private static string AC_TAG_PAUSE = "Pause";
-        private static string AC_TAG_START = "Start";
+        private bool b_shot_on_start = false;
+        private bool b_shot_on_exit = true;
         private int _timeToActionDefault = 0;
         public int timeToActionDefault
         {
@@ -70,10 +70,11 @@ namespace prjShotMaster
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
-            // Start
-            actionManager.Start();
             // on start
-            Shot();
+            if (b_shot_on_start)
+            {
+                Start();
+            }
         }
 
         private void InterceptKeys_KeyUp(Keys Key)
@@ -107,7 +108,10 @@ namespace prjShotMaster
             }
             else
             {
-                Shot(); // on exit
+                if (b_shot_on_exit) // on exit
+                {
+                    Shot();
+                }
                 CInterceptKeys.UnHook(); // UnHook
                 actionManager.Stop();
             }
@@ -125,19 +129,26 @@ namespace prjShotMaster
             Close();
         }
 
-        private void pauseStart(object sender, EventArgs e)
+        private void openDestFolder(object sender, EventArgs e)
         {
-            if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_PAUSE)
-            {
-                Stop();
-                (sender as ToolStripMenuItem).Tag = AC_TAG_START;
-            }
-            else if ((sender as ToolStripMenuItem).Tag.ToString() == AC_TAG_START)
-            {
-                Start();
-                (sender as ToolStripMenuItem).Tag = AC_TAG_PAUSE;
-            }
+            Process.Start(Properties.Settings.Default.DestinationFolder);
         }
+
+        private void Stop(object sender, EventArgs e)
+        {
+            Stop();
+        }
+
+        private void Shot(object sender, EventArgs e)
+        {
+            Shot();
+        }
+
+        private void Start(object sender, EventArgs e)
+        {
+            Start();
+        }
+        /* /Menu actions */
 
         private void Shot()
         {
@@ -150,16 +161,6 @@ namespace prjShotMaster
             tmrDefault.Start();
         }
 
-        private void Shot(object sender, EventArgs e)
-        {
-            Shot();
-        }
-
-        private void Start(object sender, EventArgs e)
-        {
-            Start();
-        }
-
         private void Start()
         {
             actionManager.Start();
@@ -167,6 +168,8 @@ namespace prjShotMaster
             tmrOneSecond.Start();
             startToolStripMenuItem.Visible = false;
             stopToolStripMenuItem.Visible = true;
+            tsbtnStart.Visible = false;
+            tsbtnStop.Visible = true;
             Shot();
         }
 
@@ -179,18 +182,9 @@ namespace prjShotMaster
             timeToActionDefault = tmrDefault.Interval / 1000;
             stopToolStripMenuItem.Visible = false;
             startToolStripMenuItem.Visible = true;
+            tsbtnStart.Visible = false;
+            tsbtnStop.Visible = true;
         }
-
-        private void Stop(object sender, EventArgs e)
-        {
-            Stop();
-        }
-
-        private void openDestFolder(object sender, EventArgs e)
-        {
-            Process.Start(Properties.Settings.Default.DestinationFolder);
-        }
-        /* /Menu actions */
 
         private void ntfIcn_DoubleClick(object sender, EventArgs e)
         {

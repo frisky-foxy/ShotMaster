@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnApplyDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 118</value>
+  </data>
+  <data name="btnApplyDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 25</value>
+  </data>
   <data name="btnApplyDefault.Text" xml:space="preserve">
     <value>Применить</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlSettingsDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>567, 153</value>
+  </data>
   <data name="cbPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 21</value>
   </data>
@@ -155,6 +164,9 @@
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
     <value>Выход</value>
   </data>
+  <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>571, 28</value>
+  </data>
   <data name="tsmiFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 24</value>
   </data>
@@ -166,12 +178,6 @@
   </data>
   <data name="stopToolStripMenuItem.Text" xml:space="preserve">
     <value>Стоп</value>
-  </data>
-  <data name="pauseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
-  </data>
-  <data name="pauseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Пауза</value>
   </data>
   <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
@@ -6389,6 +6395,24 @@
   </data>
   <data name="ntfIcn.Text" xml:space="preserve">
     <value>Дважды щелкните, чтобы открыть окно с настройками</value>
+  </data>
+  <data name="ss.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 214</value>
+  </data>
+  <data name="ss.Size" type="System.Drawing.Size, System.Drawing">
+    <value>571, 22</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>571, 27</value>
+  </data>
+  <data name="tsbtnStart.ToolTipText" xml:space="preserve">
+    <value>Старт</value>
+  </data>
+  <data name="tsbtnStop.ToolTipText" xml:space="preserve">
+    <value>Стоп</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>571, 236</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

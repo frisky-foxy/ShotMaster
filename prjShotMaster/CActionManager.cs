@@ -147,6 +147,8 @@ namespace prjShotMaster
 
         public void applySettings()
         {
+            PlaySound = Properties.Settings.Default.PlaySound;
+            SoundLocation = Properties.Settings.Default.SoundLocation;
             foreach (DictionaryEntry actionEntry in actionList)
             {
                 (actionEntry.Value as CShotAction).settings = set_settings((actionEntry.Value as CShotAction).action_code);

@@ -5,11 +5,6 @@ namespace prjShotMaster
 {
     public partial class frmMain
     {
-        private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
-        {
-            Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
-        }
-
         private void exitApp(object sender, EventArgs e)
         {
             b_minimize_on_close = false;
@@ -28,7 +23,7 @@ namespace prjShotMaster
 
         private void Shot(object sender, EventArgs e)
         {
-            State = FS_SHOT;
+            Shot();
         }
 
         private void Start(object sender, EventArgs e)

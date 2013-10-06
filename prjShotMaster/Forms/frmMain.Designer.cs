@@ -64,6 +64,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbtnStart = new System.Windows.Forms.ToolStripButton();
             this.tsbtnStop = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -274,7 +275,8 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnStart,
-            this.tsbtnStop});
+            this.tsbtnStop,
+            this.toolStripSeparator1});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
@@ -295,6 +297,11 @@
             resources.ApplyResources(this.tsbtnStop, "tsbtnStop");
             this.tsbtnStop.Tag = "Stop";
             this.tsbtnStop.Click += new System.EventHandler(this.Stop);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // frmMain
             // 
@@ -364,6 +371,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbtnStart;
         private System.Windows.Forms.ToolStripButton tsbtnStop;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

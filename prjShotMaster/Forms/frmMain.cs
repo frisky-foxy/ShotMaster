@@ -14,9 +14,11 @@ namespace prjShotMaster
     public partial class frmMain : Form
     {
         public CActionManager actionManager;
+
         private bool b_minimize_on_close = true;
         private bool b_start_on_run = false;
         private bool b_shot_on_exit = true;
+
         private int _timeToActionDefault = 0;
         public int timeToActionDefault
         {
@@ -103,12 +105,13 @@ namespace prjShotMaster
             }
             else
             {
-                if (b_shot_on_exit) // on exit
+                if (b_shot_on_exit && State == FS_START) // on exit
                 {
                     Shot();
                 }
                 CInterceptKeys.UnHook(); // UnHook
                 actionManager.Stop();
+                // State = FS_STOP;
             }
         }
 
@@ -155,7 +158,7 @@ namespace prjShotMaster
             cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
             tmrDefault.Stop();
             tmrDefault.Interval = Properties.Settings.Default.TimerInterval * 1000;
-            timeToActionDefault = tmrDefault.Interval / 1000;
+            timeToActionDefault = Properties.Settings.Default.TimerInterval;
             tmrDefault.Start();
         }
 
@@ -167,6 +170,11 @@ namespace prjShotMaster
         private void tmrOneSecond_Tick(object sender, EventArgs e)
         {
             timeToActionDefault--;
+        }
+
+        private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
+        {
+            Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
         }
     }
 }

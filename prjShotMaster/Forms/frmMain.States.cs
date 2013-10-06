@@ -7,14 +7,13 @@ namespace prjShotMaster
         // Form States
         private static int FS_STOP = 0;
         private static int FS_START = 1;
-        private static int FS_SHOT = 2;
 
         // Action Tags
         private static string AT_START = "Start";
         private static string AT_STOP = "Stop";
 
-        private bool b_shot_on_start = false;
-        private bool b_shot_on_stop = false;
+        private bool b_shot_on_start = true;
+        private bool b_shot_on_stop = true;
 
         private int _State;
         public int State
@@ -23,11 +22,7 @@ namespace prjShotMaster
             set
             {
                 _State = value;
-                if (value == FS_SHOT)
-                {
-                    Shot();
-                }
-                else if (value == FS_START)
+                if (value == FS_START)
                 {
                     Start();
                 }
@@ -68,6 +63,7 @@ namespace prjShotMaster
         private void Shot()
         {
             tmrDefault.Stop();
+            tmrOneSecond.Stop();
             double tmp_opacity = this.Opacity;
             this.Opacity = 0;
 
@@ -76,20 +72,11 @@ namespace prjShotMaster
             this.Opacity = tmp_opacity;
             timeToActionDefault = tmrDefault.Interval / 1000;
             tmrDefault.Start();
+            tmrOneSecond.Start();
         }
 
         private void toggleByTag(string tag, bool show)
         {
-            /*
-            foreach (Control control in this.Controls.Find(tag, true))
-            {
-                if (control.Tag != null && control.Tag.ToString() == tag)
-                {
-                    // control.Visible = show;
-                    MessageBox.Show(control.Tag.ToString());
-                }
-            }
-            */
             if (tag == AT_START)
             {
                 startToolStripMenuItem.Visible = show;

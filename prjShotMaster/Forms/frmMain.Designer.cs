@@ -34,9 +34,9 @@
             this.pnlPlaySoundDefault = new System.Windows.Forms.Panel();
             this.cbPlaySoundDefault = new System.Windows.Forms.CheckBox();
             this.pnlTimerIntervalDefault = new System.Windows.Forms.Panel();
+            this.nudTimerIntervalDefault = new System.Windows.Forms.NumericUpDown();
             this.lblTimerIntervalDefault1 = new System.Windows.Forms.Label();
             this.lblTimerIntervalDefault = new System.Windows.Forms.Label();
-            this.tbTimerIntervalDefault = new System.Windows.Forms.TextBox();
             this.pnlDestinationFolderDefault = new System.Windows.Forms.Panel();
             this.btntbDestinationFolderDefault = new System.Windows.Forms.Button();
             this.lblDestinationFolderDefault = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gitHubToolStripMenuItem = new prjShotMaster.Components.CToolStripMenuItemLink();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
@@ -64,10 +65,10 @@
             this.tsbtnStart = new System.Windows.Forms.ToolStripButton();
             this.tsbtnStop = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.gitHubToolStripMenuItem = new prjShotMaster.Components.CToolStripMenuItemLink();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTimerIntervalDefault)).BeginInit();
             this.pnlDestinationFolderDefault.SuspendLayout();
             this.cmsNotify.SuspendLayout();
             this.msMainMenu.SuspendLayout();
@@ -99,10 +100,20 @@
             // pnlTimerIntervalDefault
             // 
             resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
+            this.pnlTimerIntervalDefault.Controls.Add(this.nudTimerIntervalDefault);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault1);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault);
-            this.pnlTimerIntervalDefault.Controls.Add(this.tbTimerIntervalDefault);
             this.pnlTimerIntervalDefault.Name = "pnlTimerIntervalDefault";
+            // 
+            // nudTimerIntervalDefault
+            // 
+            resources.ApplyResources(this.nudTimerIntervalDefault, "nudTimerIntervalDefault");
+            this.nudTimerIntervalDefault.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.nudTimerIntervalDefault.Name = "nudTimerIntervalDefault";
             // 
             // lblTimerIntervalDefault1
             // 
@@ -113,11 +124,6 @@
             // 
             resources.ApplyResources(this.lblTimerIntervalDefault, "lblTimerIntervalDefault");
             this.lblTimerIntervalDefault.Name = "lblTimerIntervalDefault";
-            // 
-            // tbTimerIntervalDefault
-            // 
-            resources.ApplyResources(this.tbTimerIntervalDefault, "tbTimerIntervalDefault");
-            this.tbTimerIntervalDefault.Name = "tbTimerIntervalDefault";
             // 
             // pnlDestinationFolderDefault
             // 
@@ -149,7 +155,7 @@
             resources.ApplyResources(this.btnApplyDefault, "btnApplyDefault");
             this.btnApplyDefault.Name = "btnApplyDefault";
             this.btnApplyDefault.UseVisualStyleBackColor = true;
-            this.btnApplyDefault.Click += new System.EventHandler(this.applySettingsDefault);
+            this.btnApplyDefault.Click += new System.EventHandler(this.applySettings);
             // 
             // cmsNotify
             // 
@@ -229,6 +235,15 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
+            // gitHubToolStripMenuItem
+            // 
+            this.gitHubToolStripMenuItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
+            this.gitHubToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
+            this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
+            this.gitHubToolStripMenuItem.URI = null;
+            this.gitHubToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gitHubToolStripMenuItem_MouseMove);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
@@ -295,15 +310,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
-            // gitHubToolStripMenuItem
-            // 
-            this.gitHubToolStripMenuItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
-            this.gitHubToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
-            this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            this.gitHubToolStripMenuItem.URI = null;
-            this.gitHubToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gitHubToolStripMenuItem_MouseMove);
-            // 
             // frmMain
             // 
             this.AcceptButton = this.btnApplyDefault;
@@ -322,6 +328,7 @@
             this.pnlPlaySoundDefault.PerformLayout();
             this.pnlTimerIntervalDefault.ResumeLayout(false);
             this.pnlTimerIntervalDefault.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTimerIntervalDefault)).EndInit();
             this.pnlDestinationFolderDefault.ResumeLayout(false);
             this.pnlDestinationFolderDefault.PerformLayout();
             this.cmsNotify.ResumeLayout(false);
@@ -345,7 +352,6 @@
         private System.Windows.Forms.TextBox tbDestinationFolderDefault;
         private System.Windows.Forms.Button btntbDestinationFolderDefault;
         private System.Windows.Forms.Panel pnlTimerIntervalDefault;
-        private System.Windows.Forms.TextBox tbTimerIntervalDefault;
         private System.Windows.Forms.Label lblTimerIntervalDefault;
         private System.Windows.Forms.Label lblTimerIntervalDefault1;
         private System.Windows.Forms.Panel pnlPlaySoundDefault;
@@ -373,6 +379,7 @@
         private System.Windows.Forms.ToolStripButton tsbtnStart;
         private System.Windows.Forms.ToolStripButton tsbtnStop;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.NumericUpDown nudTimerIntervalDefault;
     }
 }
 

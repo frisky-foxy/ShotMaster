@@ -19,18 +19,18 @@ namespace prjShotMaster
         private bool b_start_on_run = false;
         private bool b_shot_on_exit = true;
 
-        private int _timeToActionDefault = 0;
-        public int timeToActionDefault
+        private int _countdown_default = 0;
+        public int countdown_default
         {
-            get { return _timeToActionDefault; }
+            get { return _countdown_default; }
             set
             {
                 if (value < 0)
                 {
                     value = 0;
                 }
-                _timeToActionDefault = value;
-                TimeSpan t = TimeSpan.FromSeconds(_timeToActionDefault);
+                _countdown_default = value;
+                TimeSpan t = TimeSpan.FromSeconds(_countdown_default);
                 tsslblCountdown.Text = string.Format(
                     // "{0:D2}h:{1:D2}m:{2:D2}s",
                     "{0:D2}:{1:D2}:{2:D2}",
@@ -38,7 +38,7 @@ namespace prjShotMaster
                     t.Minutes,
                     t.Seconds
                 );
-                ntfIcn.Text = "(" + _timeToActionDefault.ToString() + ") " + ntfIcnText;
+                ntfIcn.Text = "(" + _countdown_default.ToString() + ") " + ntfIcnText;
             }
         }
         private string ntfIcnText;
@@ -50,20 +50,12 @@ namespace prjShotMaster
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
             ntfIcnText = ntfIcn.Text;
-            // validate DestinationFolder
-            string path = Properties.Settings.Default.DestinationFolder;
-            // если путь относительный (без ":"), считаем, что относительно Рабочего стола текущего пользователя
-            if (path.IndexOf(':') < 0)
-            {
-                // f.e., C:\Users\Username\Desktop
-                path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + path;
-                Properties.Settings.Default.DestinationFolder = path;
-                Properties.Settings.Default.Save();
-            }
             // set manager
             actionManager = new CActionManager();
-            // show settings
-            fillSettingsControls();
+            // set settings
+            destination_folder = Properties.Settings.Default.DestinationFolder;
+            timer_interval = Properties.Settings.Default.TimerInterval;
+            play_sound = Properties.Settings.Default.PlaySound;
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
@@ -111,7 +103,6 @@ namespace prjShotMaster
                 }
                 CInterceptKeys.UnHook(); // UnHook
                 actionManager.Stop();
-                // State = FS_STOP;
             }
         }
 
@@ -132,44 +123,32 @@ namespace prjShotMaster
             }
         }
 
-        private void applySettingsDefault(object sender, EventArgs e)
+        private void applySettings(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
             Enabled = false;
-            Properties.Settings.Default.PlaySound = cbPlaySoundDefault.Checked;
-            Properties.Settings.Default.TimerInterval = Convert.ToInt32(tbTimerIntervalDefault.Text);
-            Properties.Settings.Default.TimerIntervalS = Convert.ToInt32(tbTimerIntervalDefault.Text);
-            Properties.Settings.Default.TimerIntervalW = Convert.ToInt32(tbTimerIntervalDefault.Text);
-            Properties.Settings.Default.DestinationFolder = tbDestinationFolderDefault.Text;
-            Properties.Settings.Default.DestinationFolderS = tbDestinationFolderDefault.Text;
-            Properties.Settings.Default.DestinationFolderW = tbDestinationFolderDefault.Text;
-            Properties.Settings.Default.Save();
-
-            actionManager.applySettings();
-            fillSettingsControls();
-            Enabled = true;
-            Cursor.Current = Cursors.Default;
-        }
-
-        private void fillSettingsControls()
-        {
-            tbDestinationFolderDefault.Text = Properties.Settings.Default.DestinationFolder;
-            tbTimerIntervalDefault.Text = Properties.Settings.Default.TimerInterval.ToString();
-            cbPlaySoundDefault.Checked = Properties.Settings.Default.PlaySound;
-            tmrDefault.Stop();
-            tmrDefault.Interval = Properties.Settings.Default.TimerInterval * 1000;
-            timeToActionDefault = Properties.Settings.Default.TimerInterval;
-            tmrDefault.Start();
+            try
+            {
+                destination_folder = tbDestinationFolderDefault.Text;
+                timer_interval = Convert.ToInt32(nudTimerIntervalDefault.Value);
+                play_sound = cbPlaySoundDefault.Checked;
+                actionManager.applySettings();
+            }
+            finally
+            {
+                Enabled = true;
+                Cursor.Current = Cursors.Default;
+            }
         }
 
         private void tmrDefault_Tick(object sender, EventArgs e)
         {
-            timeToActionDefault = (sender as Timer).Interval / 1000;
+            countdown_default = (sender as Timer).Interval / 1000;
         }
 
         private void tmrOneSecond_Tick(object sender, EventArgs e)
         {
-            timeToActionDefault--;
+            countdown_default--;
         }
 
         private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)

@@ -55,7 +55,7 @@ namespace prjShotMaster
             actionManager.Stop();
             tmrDefault.Stop();
             tmrOneSecond.Stop();
-            timeToActionDefault = tmrDefault.Interval / 1000;
+            countdown_default = tmrDefault.Interval / 1000;
             toggleByTag(AT_STOP, false);
             toggleByTag(AT_START, true);
         }
@@ -70,7 +70,7 @@ namespace prjShotMaster
             actionManager.Shot();
 
             this.Opacity = tmp_opacity;
-            timeToActionDefault = tmrDefault.Interval / 1000;
+            countdown_default = tmrDefault.Interval / 1000;
             tmrDefault.Start();
             tmrOneSecond.Start();
         }

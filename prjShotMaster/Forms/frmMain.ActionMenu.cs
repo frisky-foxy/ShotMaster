@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using prjShotMaster.Forms;
 
 namespace prjShotMaster
 {
@@ -29,6 +30,12 @@ namespace prjShotMaster
         private void Start(object sender, EventArgs e)
         {
             State = FS_START;
+        }
+
+        private void showAboutForm(object sender, EventArgs e)
+        {
+            frmAbout frm = new frmAbout();
+            frm.Show();
         }
     }
 }

@@ -53,7 +53,6 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gitHubToolStripMenuItem = new prjShotMaster.Components.CToolStripMenuItemLink();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ntfIcn = new System.Windows.Forms.NotifyIcon(this.components);
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
@@ -65,6 +64,7 @@
             this.tsbtnStart = new System.Windows.Forms.ToolStripButton();
             this.tsbtnStop = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.gitHubToolStripMenuItem = new prjShotMaster.Components.CToolStripMenuItemLink();
             this.pnlSettingsDefault.SuspendLayout();
             this.pnlPlaySoundDefault.SuspendLayout();
             this.pnlTimerIntervalDefault.SuspendLayout();
@@ -229,19 +229,11 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
-            // gitHubToolStripMenuItem
-            // 
-            this.gitHubToolStripMenuItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
-            this.gitHubToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
-            this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            this.gitHubToolStripMenuItem.URI = null;
-            this.gitHubToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gitHubToolStripMenuItem_MouseMove);
-            // 
             // aboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.showAboutForm);
             // 
             // ntfIcn
             // 
@@ -302,6 +294,15 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            // 
+            // gitHubToolStripMenuItem
+            // 
+            this.gitHubToolStripMenuItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.gitHubToolStripMenuItem, "gitHubToolStripMenuItem");
+            this.gitHubToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
+            this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
+            this.gitHubToolStripMenuItem.URI = null;
+            this.gitHubToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gitHubToolStripMenuItem_MouseMove);
             // 
             // frmMain
             // 

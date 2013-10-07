@@ -155,14 +155,32 @@
   <data name="lblDestinationFolderDefault.Text" xml:space="preserve">
     <value>Куда сохранять</value>
   </data>
-  <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 28</value>
+  <data name="shotNowToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Сделать снимок</value>
   </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 24</value>
+  <data name="openDestinationFolderToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
+  <data name="openDestinationFolderToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Открыть папку со снимками</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Настройки…</value>
+  </data>
+  <data name="fboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
+  <data name="fboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе…</value>
   </data>
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
     <value>Выход</value>
+  </data>
+  <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 136</value>
   </data>
   <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>571, 28</value>
@@ -12585,10 +12603,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Настройки</value>

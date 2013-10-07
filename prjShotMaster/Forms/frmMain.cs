@@ -48,6 +48,7 @@ namespace prjShotMaster
             InitializeComponent();
             // init
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
+            shotNowToolStripMenuItem1.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
             ntfIcnText = ntfIcn.Text;
             // set manager

@@ -127,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="20130929-256.ico" />
+    <None Include="res\icon\Shot.png" />
+    <None Include="res\icon\Start.png" />
+    <None Include="res\icon\Stop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

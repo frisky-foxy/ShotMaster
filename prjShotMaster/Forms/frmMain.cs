@@ -156,5 +156,20 @@ namespace prjShotMaster
         {
             Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
         }
+
+        private void Stop(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Start(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Shot(object sender, EventArgs e)
+        {
+
+        }
     }
 }

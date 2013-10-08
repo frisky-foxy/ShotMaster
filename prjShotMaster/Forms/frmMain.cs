@@ -54,9 +54,8 @@ namespace prjShotMaster
             destination_folder = Properties.Settings.Default.DestinationFolder;
             timer_interval = Properties.Settings.Default.TimerInterval;
             play_sound = Properties.Settings.Default.PlaySound;
+            // here set actionManager
             do_action_w = Properties.Settings.Default.DoActionW;
-            // set manager
-            actionManager = new CActionManager(do_action_w);
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
@@ -133,6 +132,7 @@ namespace prjShotMaster
                 destination_folder = tbDestinationFolderDefault.Text;
                 timer_interval = Convert.ToInt32(nudTimerIntervalDefault.Value);
                 play_sound = cbPlaySoundDefault.Checked;
+                do_action_w = cbCameraShot.Checked;
                 actionManager.applySettings();
             }
             finally

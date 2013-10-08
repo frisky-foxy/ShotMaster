@@ -80,6 +80,16 @@ namespace prjShotMaster
                 cbCameraShot.Checked = _do_action_w;
                 Properties.Settings.Default.DoActionW = _do_action_w;
                 Properties.Settings.Default.Save();
+                bool b_was_start = (State == FS_START);
+                if (b_was_start)
+                {
+                    State = FS_STOP;
+                }
+                actionManager = new CActionManager();
+                if (b_was_start)
+                {
+                    State = FS_START;
+                }
             }
         }
     }

@@ -59,15 +59,10 @@ namespace prjShotMaster
             }
 
             add2list(new CScreenShotAction(AC_SCREEN));
-            if (do_action_w)
+            if (Properties.Settings.Default.DoActionW)
             {
                 add2list(new CWebcamShotAction(AC_WEBCAM));
             }
-        }
-
-        public CActionManager(bool p_do_action_w) : this()
-        {
-            do_action_w = p_do_action_w;
         }
 
         public void Start()

@@ -18,6 +18,8 @@ namespace prjShotMaster.Forms
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
+            this.linkLabelGitHub.Text = Properties.Settings.Default.GitHubURI.ToString();
+            this.linkLabelGitHub.Links[0].LinkData = Properties.Settings.Default.GitHubURI.ToString();
             this.textBoxDescription.Text = AssemblyDescription;
         }
 
@@ -100,5 +102,15 @@ namespace prjShotMaster.Forms
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void linkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
+        }
     }
 }

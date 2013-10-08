@@ -229,18 +229,6 @@ namespace prjShotMaster.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/resteem/ShotMaster")]
-        public string GitHubLink {
-            get {
-                return ((string)(this["GitHubLink"]));
-            }
-            set {
-                this["GitHubLink"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Ctrl + K + J")]
         public string ShortcutKey {
             get {
@@ -260,6 +248,18 @@ namespace prjShotMaster.Properties {
             }
             set {
                 this["GitHubURI"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool DoActionW {
+            get {
+                return ((bool)(this["DoActionW"]));
+            }
+            set {
+                this["DoActionW"] = value;
             }
         }
     }

@@ -66,5 +66,21 @@ namespace prjShotMaster
                 Properties.Settings.Default.Save();
             }
         }
+
+        private bool _do_action_w;
+        public bool do_action_w
+        {
+            get
+            {
+                return _do_action_w;
+            }
+            set
+            {
+                _do_action_w = value;
+                cbCameraShot.Checked = _do_action_w;
+                Properties.Settings.Default.DoActionW = _do_action_w;
+                Properties.Settings.Default.Save();
+            }
+        }
     }
 }

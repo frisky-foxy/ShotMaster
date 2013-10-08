@@ -63,9 +63,9 @@ namespace prjShotMaster.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Shot {
+        internal static System.Drawing.Bitmap About {
             get {
-                object obj = ResourceManager.GetObject("Shot", resourceCulture);
+                object obj = ResourceManager.GetObject("About", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

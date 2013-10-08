@@ -6,33 +6,33 @@ namespace prjShotMaster
 {
     public partial class frmMain
     {
-        private void exitApp(object sender, EventArgs e)
+        private void maExitApp(object sender, EventArgs e)
         {
             b_minimize_on_close = false;
             Close();
         }
 
-        private void openDestFolder(object sender, EventArgs e)
+        private void maOpenDestFolder(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(Properties.Settings.Default.DestinationFolder);
         }
 
-        private void Stop(object sender, EventArgs e)
+        private void maStop(object sender, EventArgs e)
         {
             State = FS_STOP;
         }
 
-        private void Shot(object sender, EventArgs e)
+        private void maShot(object sender, EventArgs e)
         {
             Shot();
         }
 
-        private void Start(object sender, EventArgs e)
+        private void maStart(object sender, EventArgs e)
         {
             State = FS_START;
         }
 
-        private void showAboutForm(object sender, EventArgs e)
+        private void maShowAboutForm(object sender, EventArgs e)
         {
             frmAbout frm = new frmAbout();
             frm.Show();

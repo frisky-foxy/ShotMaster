@@ -49,14 +49,14 @@ namespace prjShotMaster
             // init
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             shotNowToolStripMenuItem1.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
-            gitHubToolStripMenuItem.URI = Properties.Settings.Default.GitHubURI;
             ntfIcnText = ntfIcn.Text;
-            // set manager
-            actionManager = new CActionManager();
             // set settings
             destination_folder = Properties.Settings.Default.DestinationFolder;
             timer_interval = Properties.Settings.Default.TimerInterval;
             play_sound = Properties.Settings.Default.PlaySound;
+            do_action_w = Properties.Settings.Default.DoActionW;
+            // set manager
+            actionManager = new CActionManager(do_action_w);
             // hook (старт перехвата клавы)
             CInterceptKeys.Hook();
             CInterceptKeys.KeyUp += InterceptKeys_KeyUp;
@@ -152,24 +152,19 @@ namespace prjShotMaster
             countdown_default--;
         }
 
-        private void gitHubToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
-        {
-            Cursor.Current = (sender as prjShotMaster.Components.CToolStripMenuItemLink).Cursor;
-        }
-
         private void Stop(object sender, EventArgs e)
         {
-
+            maStop(sender, e);
         }
 
         private void Start(object sender, EventArgs e)
         {
-
+            maStart(sender, e);
         }
 
         private void Shot(object sender, EventArgs e)
         {
-
+            maShot(sender, e);
         }
     }
 }

@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnApplyDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 118</value>
+    <value>465, 158</value>
   </data>
   <data name="btnApplyDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 25</value>
@@ -128,7 +128,13 @@
     <value>Применить</value>
   </data>
   <data name="pnlSettingsDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>567, 153</value>
+    <value>567, 193</value>
+  </data>
+  <data name="cbCameraShot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 21</value>
+  </data>
+  <data name="cbCameraShot.Text" xml:space="preserve">
+    <value>Снимки с камеры (β, нестабильный функционал)</value>
   </data>
   <data name="cbPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 21</value>
@@ -155,6 +161,12 @@
   <data name="lblDestinationFolderDefault.Text" xml:space="preserve">
     <value>Куда сохранять</value>
   </data>
+  <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 136</value>
+  </data>
+  <data name="shotNowToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
   <data name="shotNowToolStripMenuItem1.Text" xml:space="preserve">
     <value>Сделать снимок</value>
   </data>
@@ -163,6 +175,9 @@
   </data>
   <data name="openDestinationFolderToolStripMenuItem1.Text" xml:space="preserve">
     <value>Открыть папку со снимками</value>
+  </data>
+  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 6</value>
   </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
@@ -176,11 +191,14 @@
   <data name="fboutToolStripMenuItem.Text" xml:space="preserve">
     <value>О программе…</value>
   </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 6</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 24</value>
+  </data>
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
     <value>Выход</value>
-  </data>
-  <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 136</value>
   </data>
   <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>571, 28</value>
@@ -229,9 +247,6 @@
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Справка</value>
-  </data>
-  <data name="gitHubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 24</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 24</value>
@@ -6415,7 +6430,7 @@
     <value>Дважды щелкните, чтобы открыть окно с настройками</value>
   </data>
   <data name="ss.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 214</value>
+    <value>0, 254</value>
   </data>
   <data name="ss.Size" type="System.Drawing.Size, System.Drawing">
     <value>571, 22</value>
@@ -6430,7 +6445,7 @@
     <value>Стоп</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>571, 236</value>
+    <value>571, 276</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

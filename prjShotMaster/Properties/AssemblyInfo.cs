@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("prjShotMaster")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Shot Master")]
+[assembly: AssemblyDescription("Makes screenshots and pictures from the camera at specified intervals")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ZontiqueApp")]
-[assembly: AssemblyProduct("prjShotMaster")]
+[assembly: AssemblyProduct("ShotMaster")]
 [assembly: AssemblyCopyright("Copyright © ZontiqueApp 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

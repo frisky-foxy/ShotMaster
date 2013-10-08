@@ -31,6 +31,8 @@ namespace prjShotMaster
         public OrderedDictionary actionList = new OrderedDictionary();
         public OrderedDictionary timerList = new OrderedDictionary();
 
+        public bool do_action_w;
+
         public bool PlaySound { get; set; }
         // заполнять после заполнения PlaySound
         private string _SoundLocation;
@@ -57,7 +59,15 @@ namespace prjShotMaster
             }
 
             add2list(new CScreenShotAction(AC_SCREEN));
-            add2list(new CWebcamShotAction(AC_WEBCAM));
+            if (do_action_w)
+            {
+                add2list(new CWebcamShotAction(AC_WEBCAM));
+            }
+        }
+
+        public CActionManager(bool p_do_action_w) : this()
+        {
+            do_action_w = p_do_action_w;
         }
 
         public void Start()

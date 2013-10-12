@@ -162,7 +162,7 @@
     <value>Куда сохранять</value>
   </data>
   <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 136</value>
+    <value>276, 82</value>
   </data>
   <data name="shotNowToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 24</value>
@@ -177,21 +177,6 @@
     <value>Открыть папку со снимками</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 6</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Настройки…</value>
-  </data>
-  <data name="fboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
-  </data>
-  <data name="fboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>О программе…</value>
-  </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 6</value>
   </data>
   <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -6425,9 +6410,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  </data>
-  <data name="ntfIcn.Text" xml:space="preserve">
-    <value>Дважды щелкните, чтобы открыть окно с настройками</value>
   </data>
   <data name="ss.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 254</value>

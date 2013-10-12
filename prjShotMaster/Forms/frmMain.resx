@@ -121,10 +121,6 @@
   <data name="tbDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tbDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -150,6 +146,7 @@
   <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pnlTimerIntervalDefault.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -161,9 +158,6 @@
   </data>
   <data name="&gt;&gt;tbDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="fboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 24</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
@@ -186,11 +180,8 @@
   <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 24</value>
   </data>
-  <data name="&gt;&gt;lblTimerIntervalDefault1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tbDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;nudTimerIntervalDefault.Parent" xml:space="preserve">
     <value>pnlTimerIntervalDefault</value>
@@ -213,8 +204,8 @@
   <data name="lblTimerIntervalDefault.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 8</value>
   </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 24</value>
+  <data name="&gt;&gt;lblTimerIntervalDefault1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblTimerIntervalDefault1.Parent" xml:space="preserve">
     <value>pnlTimerIntervalDefault</value>
@@ -237,9 +228,6 @@
   <data name="cbPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
-  </data>
   <data name="&gt;&gt;cbPlaySoundDefault.Parent" xml:space="preserve">
     <value>pnlPlaySoundDefault</value>
   </data>
@@ -252,8 +240,8 @@
   <data name="pnlPlaySoundDefault.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;fboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnApplyDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;tsbtnStart.Name" xml:space="preserve">
     <value>tsbtnStart</value>
@@ -261,10 +249,10 @@
   <data name="btnApplyDefault.Location" type="System.Drawing.Point, System.Drawing">
     <value>485, 156</value>
   </data>
-  <data name="&gt;&gt;btntbDestinationFolderDefault.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="lblDestinationFolderDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;pnlDestinationFolderDefault.Name" xml:space="preserve">
+  <data name="&gt;&gt;lblDestinationFolderDefault.Parent" xml:space="preserve">
     <value>pnlDestinationFolderDefault</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
@@ -12686,17 +12674,11 @@
   <data name="&gt;&gt;msMainMenu.Name" xml:space="preserve">
     <value>msMainMenu</value>
   </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;shotNowToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
-    <value>toolStripMenuItem2</value>
   </data>
   <data name="&gt;&gt;shotNowToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -12740,8 +12722,8 @@
   <data name="btnApplyDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="&gt;&gt;btnApplyDefault.Parent" xml:space="preserve">
-    <value>pnlSettingsDefault</value>
+  <data name="&gt;&gt;btntbDestinationFolderDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;pnlDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -12773,9 +12755,6 @@
   <data name="&gt;&gt;pnlSettingsDefault.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ntfIcn.Text" xml:space="preserve">
-    <value>Double click to show Settings form</value>
-  </data>
   <data name="&gt;&gt;openDestinationFolderToolStripMenuItem.Name" xml:space="preserve">
     <value>openDestinationFolderToolStripMenuItem</value>
   </data>
@@ -12790,9 +12769,6 @@
   </data>
   <data name="&gt;&gt;lblDestinationFolderDefault.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;fboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>fboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;tmrOneSecond.Name" xml:space="preserve">
     <value>tmrOneSecond</value>
@@ -12815,8 +12791,8 @@
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 6</value>
   </data>
-  <data name="fboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About…</value>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Name" xml:space="preserve">
+    <value>pnlDestinationFolderDefault</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>pnlSettingsDefault</value>
@@ -12826,6 +12802,12 @@
   </data>
   <data name="&gt;&gt;fbd.Name" xml:space="preserve">
     <value>fbd</value>
+  </data>
+  <data name="tbDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 22</value>
+  </data>
+  <data name="&gt;&gt;ss.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="openDestinationFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 24</value>
@@ -12860,9 +12842,6 @@
   <data name="stopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 24</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tsmiFile.Name" xml:space="preserve">
     <value>tsmiFile</value>
   </data>
@@ -12871,9 +12850,6 @@
   </data>
   <data name="pnlPlaySoundDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>561, 32</value>
-  </data>
-  <data name="btnApplyDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;tsmiFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -12884,8 +12860,8 @@
   <data name="&gt;&gt;pnlTimerIntervalDefault.Name" xml:space="preserve">
     <value>pnlTimerIntervalDefault</value>
   </data>
-  <data name="tbDestinationFolderDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 22</value>
+  <data name="&gt;&gt;pnlTimerIntervalDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ss.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -12898,9 +12874,6 @@
   </data>
   <data name="pnlSettingsDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;pnlTimerIntervalDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>577, 27</value>
@@ -12930,7 +12903,7 @@
     <value>130, 24</value>
   </data>
   <data name="cmsNotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 136</value>
+    <value>237, 82</value>
   </data>
   <data name="&gt;&gt;tmrDefault.Name" xml:space="preserve">
     <value>tmrDefault</value>
@@ -13049,14 +13022,14 @@
   <data name="msMainMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>577, 28</value>
   </data>
-  <data name="&gt;&gt;pnlDestinationFolderDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnApplyDefault.Parent" xml:space="preserve">
+    <value>pnlSettingsDefault</value>
   </data>
   <data name="btntbDestinationFolderDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 6</value>
+  <data name="lblDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
   </data>
   <data name="&gt;&gt;pnlDestinationFolderDefault.Parent" xml:space="preserve">
     <value>pnlSettingsDefault</value>
@@ -13087,9 +13060,6 @@
   </data>
   <data name="&gt;&gt;btnApplyDefault.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblDestinationFolderDefault.Parent" xml:space="preserve">
-    <value>pnlDestinationFolderDefault</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>577, 271</value>
@@ -13124,20 +13094,14 @@
   <data name="ss.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 249</value>
   </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>settingsToolStripMenuItem</value>
-  </data>
   <data name="cbCameraShot.Text" xml:space="preserve">
     <value>Camera shots (β)</value>
   </data>
   <data name="tsmiFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 24</value>
   </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings…</value>
-  </data>
-  <data name="msMainMenu.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="&gt;&gt;pnlDestinationFolderDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbCameraShot.Name" xml:space="preserve">
     <value>cbCameraShot</value>
@@ -13163,8 +13127,8 @@
   <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="lblDestinationFolderDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;stopToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -13196,8 +13160,8 @@
   <data name="&gt;&gt;ss.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ss.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="msMainMenu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>About…</value>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using prjShotMaster.Actions;
+using System.Reflection;
 
 namespace prjShotMaster
 {
@@ -49,6 +50,10 @@ namespace prjShotMaster
             // init
             shotNowToolStripMenuItem.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
             shotNowToolStripMenuItem1.ShortcutKeyDisplayString = Properties.Settings.Default.ShortcutKey;
+            // ntfIcn
+            object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
+            AssemblyTitleAttribute titleAttribute = (AssemblyTitleAttribute)attributes[0];
+            ntfIcn.Text = titleAttribute.Title;
             ntfIcnText = ntfIcn.Text;
             // set settings
             destination_folder = Properties.Settings.Default.DestinationFolder;
@@ -106,14 +111,6 @@ namespace prjShotMaster
             }
         }
 
-        private void ntfIcn_DoubleClick(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Normal;
-            ShowInTaskbar = true;
-            ntfIcn.Visible = false;
-            Show();
-        }
-
         private void btntbDestinationFolderDefault_Click(object sender, EventArgs e)
         {
             fbd.SelectedPath = Properties.Settings.Default.DestinationFolder;
@@ -165,6 +162,18 @@ namespace prjShotMaster
         private void Shot(object sender, EventArgs e)
         {
             maShot(sender, e);
+        }
+
+        private void ntfIcn_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                WindowState = FormWindowState.Normal;
+                ShowInTaskbar = true;
+                ntfIcn.Visible = false;
+                // (sender as NotifyIcon).Visible = false;
+                Show();
+            }
         }
     }
 }

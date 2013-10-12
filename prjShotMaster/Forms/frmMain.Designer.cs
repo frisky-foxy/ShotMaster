@@ -48,9 +48,6 @@
             this.shotNowToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openDestinationFolderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.tsmiFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -195,9 +192,6 @@
             this.shotNowToolStripMenuItem1,
             this.openDestinationFolderToolStripMenuItem1,
             this.toolStripMenuItem3,
-            this.settingsToolStripMenuItem,
-            this.fboutToolStripMenuItem,
-            this.toolStripMenuItem2,
             this.closeToolStripMenuItem});
             this.cmsNotify.Name = "contextMenuStrip1";
             // 
@@ -217,23 +211,6 @@
             // 
             resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            // 
-            // settingsToolStripMenuItem
-            // 
-            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.ntfIcn_DoubleClick);
-            // 
-            // fboutToolStripMenuItem
-            // 
-            resources.ApplyResources(this.fboutToolStripMenuItem, "fboutToolStripMenuItem");
-            this.fboutToolStripMenuItem.Name = "fboutToolStripMenuItem";
-            this.fboutToolStripMenuItem.Click += new System.EventHandler(this.maShowAboutForm);
-            // 
-            // toolStripMenuItem2
-            // 
-            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             // 
             // closeToolStripMenuItem
             // 
@@ -317,7 +294,7 @@
             // 
             resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.ContextMenuStrip = this.cmsNotify;
-            this.ntfIcn.DoubleClick += new System.EventHandler(this.ntfIcn_DoubleClick);
+            this.ntfIcn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ntfIcn_MouseClick);
             // 
             // fbd
             // 
@@ -450,9 +427,6 @@
         private System.Windows.Forms.NumericUpDown nudTimerIntervalDefault;
         private System.Windows.Forms.ToolStripMenuItem shotNowToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem openDestinationFolderToolStripMenuItem1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox cbCameraShot;

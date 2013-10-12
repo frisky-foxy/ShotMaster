@@ -34,8 +34,8 @@ namespace prjShotMaster
 
         private void maShowAboutForm(object sender, EventArgs e)
         {
-            frmAbout frm = new frmAbout();
-            frm.Show();
+            frmAbout frmAbout = new frmAbout();
+            frmAbout.ShowDialog(this);
         }
     }
 }

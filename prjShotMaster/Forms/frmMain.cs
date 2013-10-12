@@ -32,14 +32,8 @@ namespace prjShotMaster
                 }
                 _countdown_default = value;
                 TimeSpan t = TimeSpan.FromSeconds(_countdown_default);
-                tsslblCountdown.Text = string.Format(
-                    // "{0:D2}h:{1:D2}m:{2:D2}s",
-                    "{0:D2}:{1:D2}:{2:D2}",
-                    t.Hours,
-                    t.Minutes,
-                    t.Seconds
-                );
-                ntfIcn.Text = "(" + _countdown_default.ToString() + ") " + ntfIcnText;
+                tsslblCountdown.Text = string.Format("{0:D2}:{1:D2}:{2:D2}", t.Hours, t.Minutes, t.Seconds);
+                ntfIcn.Text = String.Format("({0} {1}) {2}", state_text_icon, _countdown_default.ToString(), ntfIcnText);
             }
         }
         private string ntfIcnText;
@@ -67,7 +61,7 @@ namespace prjShotMaster
             // on start
             if (b_start_on_run)
             {
-                State = FS_START;
+                state = FS_START;
             }
         }
 
@@ -102,7 +96,7 @@ namespace prjShotMaster
             }
             else
             {
-                if (b_shot_on_exit && State == FS_START) // on exit
+                if (b_shot_on_exit && state == FS_START) // on exit
                 {
                     Shot();
                 }

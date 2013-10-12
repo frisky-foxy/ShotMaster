@@ -19,7 +19,7 @@ namespace prjShotMaster
 
         private void maStop(object sender, EventArgs e)
         {
-            State = FS_STOP;
+            state = FS_STOP;
         }
 
         private void maShot(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace prjShotMaster
 
         private void maStart(object sender, EventArgs e)
         {
-            State = FS_START;
+            state = FS_START;
         }
 
         private void maShowAboutForm(object sender, EventArgs e)

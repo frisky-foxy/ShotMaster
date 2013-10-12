@@ -45,6 +45,8 @@
             this.tbDestinationFolderDefault = new System.Windows.Forms.TextBox();
             this.btnApplyDefault = new System.Windows.Forms.Button();
             this.cmsNotify = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.stopToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.startToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.shotNowToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openDestinationFolderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
@@ -189,11 +191,29 @@
             // 
             resources.ApplyResources(this.cmsNotify, "cmsNotify");
             this.cmsNotify.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stopToolStripMenuItem1,
+            this.startToolStripMenuItem1,
             this.shotNowToolStripMenuItem1,
             this.openDestinationFolderToolStripMenuItem1,
             this.toolStripMenuItem3,
             this.closeToolStripMenuItem});
             this.cmsNotify.Name = "contextMenuStrip1";
+            // 
+            // stopToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.stopToolStripMenuItem1, "stopToolStripMenuItem1");
+            this.stopToolStripMenuItem1.Image = global::prjShotMaster.Properties.Resources.Stop;
+            this.stopToolStripMenuItem1.Name = "stopToolStripMenuItem1";
+            this.stopToolStripMenuItem1.Tag = "Stop";
+            this.stopToolStripMenuItem1.Click += new System.EventHandler(this.Stop);
+            // 
+            // startToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.startToolStripMenuItem1, "startToolStripMenuItem1");
+            this.startToolStripMenuItem1.Image = global::prjShotMaster.Properties.Resources.Start;
+            this.startToolStripMenuItem1.Name = "startToolStripMenuItem1";
+            this.startToolStripMenuItem1.Tag = "Start";
+            this.startToolStripMenuItem1.Click += new System.EventHandler(this.Start);
             // 
             // shotNowToolStripMenuItem1
             // 
@@ -430,6 +450,8 @@
         private System.Windows.Forms.ToolStripMenuItem openDestinationFolderToolStripMenuItem1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox cbCameraShot;
+        private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem1;
     }
 }
 

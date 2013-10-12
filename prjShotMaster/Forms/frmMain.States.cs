@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace prjShotMaster
 {
@@ -12,16 +13,34 @@ namespace prjShotMaster
         private static string AT_START = "Start";
         private static string AT_STOP = "Stop";
 
+        // Action text "icons"
+        private static string AI_START = "▶"; // "Working"
+        private static string AI_STOP = "■"; // "Stopped"
+
         private bool b_shot_on_start = true;
         private bool b_shot_on_stop = true;
 
-        private int _State;
-        public int State
+        private string _state_text_icon;
+        private string state_text_icon
         {
-            get { return _State; }
+            get
+            {
+                return _state_text_icon;
+            }
             set
             {
-                _State = value;
+                _state_text_icon = value;
+                ntfIcn.Text = String.Format("({0} {1}) {2}", _state_text_icon, countdown_default.ToString(), ntfIcnText);
+            }
+        }
+
+        private int _state;
+        public int state
+        {
+            get { return _state; }
+            set
+            {
+                _state = value;
                 if (value == FS_START)
                 {
                     Start();
@@ -44,6 +63,7 @@ namespace prjShotMaster
             {
                 Shot();
             }
+            state_text_icon = AI_START;
         }
 
         private void Stop()
@@ -58,6 +78,7 @@ namespace prjShotMaster
             countdown_default = tmrDefault.Interval / 1000;
             toggleByTag(AT_STOP, false);
             toggleByTag(AT_START, true);
+            state_text_icon = AI_STOP;
         }
 
         private void Shot()
@@ -80,15 +101,19 @@ namespace prjShotMaster
             if (tag == AT_START)
             {
                 startToolStripMenuItem.Visible = show;
+                startToolStripMenuItem1.Visible = show;
                 tsbtnStart.Visible = show;
                 stopToolStripMenuItem.Visible = !show;
+                stopToolStripMenuItem1.Visible = !show;
                 tsbtnStop.Visible = !show;
             }
             else if (tag == AT_STOP)
             {
                 startToolStripMenuItem.Visible = !show;
+                startToolStripMenuItem1.Visible = !show;
                 tsbtnStart.Visible = !show;
                 stopToolStripMenuItem.Visible = show;
+                stopToolStripMenuItem1.Visible = show;
                 tsbtnStop.Visible = show;
             }
         }

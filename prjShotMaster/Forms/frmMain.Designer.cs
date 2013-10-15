@@ -85,49 +85,76 @@
             // 
             // pnlSettingsDefault
             // 
-            resources.ApplyResources(this.pnlSettingsDefault, "pnlSettingsDefault");
+            this.pnlSettingsDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlSettingsDefault.Controls.Add(this.panel1);
             this.pnlSettingsDefault.Controls.Add(this.pnlPlaySoundDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlTimerIntervalDefault);
             this.pnlSettingsDefault.Controls.Add(this.pnlDestinationFolderDefault);
             this.pnlSettingsDefault.Controls.Add(this.btnApplyDefault);
+            this.pnlSettingsDefault.Location = new System.Drawing.Point(3, 58);
             this.pnlSettingsDefault.Name = "pnlSettingsDefault";
+            this.pnlSettingsDefault.Size = new System.Drawing.Size(573, 172);
+            this.pnlSettingsDefault.TabIndex = 0;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.cbCameraShot);
+            this.panel1.Location = new System.Drawing.Point(5, 3);
             this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(561, 32);
+            this.panel1.TabIndex = 15;
             // 
             // cbCameraShot
             // 
-            resources.ApplyResources(this.cbCameraShot, "cbCameraShot");
+            this.cbCameraShot.AutoSize = true;
+            this.cbCameraShot.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cbCameraShot.Location = new System.Drawing.Point(6, 6);
             this.cbCameraShot.Name = "cbCameraShot";
+            this.cbCameraShot.Size = new System.Drawing.Size(139, 21);
+            this.cbCameraShot.TabIndex = 4;
+            this.cbCameraShot.Text = "Camera shots (β)";
             this.cbCameraShot.UseVisualStyleBackColor = true;
             // 
             // pnlPlaySoundDefault
             // 
-            resources.ApplyResources(this.pnlPlaySoundDefault, "pnlPlaySoundDefault");
+            this.pnlPlaySoundDefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlPlaySoundDefault.Controls.Add(this.cbPlaySoundDefault);
+            this.pnlPlaySoundDefault.Location = new System.Drawing.Point(5, 104);
             this.pnlPlaySoundDefault.Name = "pnlPlaySoundDefault";
+            this.pnlPlaySoundDefault.Size = new System.Drawing.Size(561, 32);
+            this.pnlPlaySoundDefault.TabIndex = 14;
             // 
             // cbPlaySoundDefault
             // 
-            resources.ApplyResources(this.cbPlaySoundDefault, "cbPlaySoundDefault");
+            this.cbPlaySoundDefault.AutoSize = true;
+            this.cbPlaySoundDefault.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cbPlaySoundDefault.Location = new System.Drawing.Point(6, 6);
             this.cbPlaySoundDefault.Name = "cbPlaySoundDefault";
+            this.cbPlaySoundDefault.Size = new System.Drawing.Size(100, 21);
+            this.cbPlaySoundDefault.TabIndex = 3;
+            this.cbPlaySoundDefault.Text = "Play sound";
             this.cbPlaySoundDefault.UseVisualStyleBackColor = true;
             // 
             // pnlTimerIntervalDefault
             // 
-            resources.ApplyResources(this.pnlTimerIntervalDefault, "pnlTimerIntervalDefault");
+            this.pnlTimerIntervalDefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlTimerIntervalDefault.Controls.Add(this.nudTimerIntervalDefault);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault1);
             this.pnlTimerIntervalDefault.Controls.Add(this.lblTimerIntervalDefault);
+            this.pnlTimerIntervalDefault.Location = new System.Drawing.Point(5, 70);
             this.pnlTimerIntervalDefault.Name = "pnlTimerIntervalDefault";
+            this.pnlTimerIntervalDefault.Size = new System.Drawing.Size(561, 32);
+            this.pnlTimerIntervalDefault.TabIndex = 13;
             // 
             // nudTimerIntervalDefault
             // 
-            resources.ApplyResources(this.nudTimerIntervalDefault, "nudTimerIntervalDefault");
+            this.nudTimerIntervalDefault.Location = new System.Drawing.Point(162, 6);
             this.nudTimerIntervalDefault.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -139,6 +166,8 @@
             0,
             0});
             this.nudTimerIntervalDefault.Name = "nudTimerIntervalDefault";
+            this.nudTimerIntervalDefault.Size = new System.Drawing.Size(57, 22);
+            this.nudTimerIntervalDefault.TabIndex = 2;
             this.nudTimerIntervalDefault.Value = new decimal(new int[] {
             10,
             0,
@@ -147,49 +176,79 @@
             // 
             // lblTimerIntervalDefault1
             // 
-            resources.ApplyResources(this.lblTimerIntervalDefault1, "lblTimerIntervalDefault1");
+            this.lblTimerIntervalDefault1.AutoSize = true;
+            this.lblTimerIntervalDefault1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTimerIntervalDefault1.Location = new System.Drawing.Point(225, 8);
             this.lblTimerIntervalDefault1.Name = "lblTimerIntervalDefault1";
+            this.lblTimerIntervalDefault1.Size = new System.Drawing.Size(15, 17);
+            this.lblTimerIntervalDefault1.TabIndex = 6;
+            this.lblTimerIntervalDefault1.Text = "s";
             // 
             // lblTimerIntervalDefault
             // 
-            resources.ApplyResources(this.lblTimerIntervalDefault, "lblTimerIntervalDefault");
+            this.lblTimerIntervalDefault.AutoSize = true;
+            this.lblTimerIntervalDefault.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTimerIntervalDefault.Location = new System.Drawing.Point(3, 8);
             this.lblTimerIntervalDefault.Name = "lblTimerIntervalDefault";
+            this.lblTimerIntervalDefault.Size = new System.Drawing.Size(94, 17);
+            this.lblTimerIntervalDefault.TabIndex = 5;
+            this.lblTimerIntervalDefault.Text = "Timer interval";
             // 
             // pnlDestinationFolderDefault
             // 
-            resources.ApplyResources(this.pnlDestinationFolderDefault, "pnlDestinationFolderDefault");
+            this.pnlDestinationFolderDefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDestinationFolderDefault.Controls.Add(this.btntbDestinationFolderDefault);
             this.pnlDestinationFolderDefault.Controls.Add(this.lblDestinationFolderDefault);
             this.pnlDestinationFolderDefault.Controls.Add(this.tbDestinationFolderDefault);
+            this.pnlDestinationFolderDefault.Location = new System.Drawing.Point(5, 36);
             this.pnlDestinationFolderDefault.Name = "pnlDestinationFolderDefault";
+            this.pnlDestinationFolderDefault.Size = new System.Drawing.Size(561, 33);
+            this.pnlDestinationFolderDefault.TabIndex = 9;
             // 
             // btntbDestinationFolderDefault
             // 
-            resources.ApplyResources(this.btntbDestinationFolderDefault, "btntbDestinationFolderDefault");
+            this.btntbDestinationFolderDefault.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btntbDestinationFolderDefault.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btntbDestinationFolderDefault.Location = new System.Drawing.Point(532, 5);
             this.btntbDestinationFolderDefault.Name = "btntbDestinationFolderDefault";
+            this.btntbDestinationFolderDefault.Size = new System.Drawing.Size(23, 23);
+            this.btntbDestinationFolderDefault.TabIndex = 1;
+            this.btntbDestinationFolderDefault.Text = "…";
             this.btntbDestinationFolderDefault.UseVisualStyleBackColor = true;
             this.btntbDestinationFolderDefault.Click += new System.EventHandler(this.btntbDestinationFolderDefault_Click);
             // 
             // lblDestinationFolderDefault
             // 
-            resources.ApplyResources(this.lblDestinationFolderDefault, "lblDestinationFolderDefault");
+            this.lblDestinationFolderDefault.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblDestinationFolderDefault.Location = new System.Drawing.Point(3, 8);
             this.lblDestinationFolderDefault.Name = "lblDestinationFolderDefault";
+            this.lblDestinationFolderDefault.Size = new System.Drawing.Size(153, 23);
+            this.lblDestinationFolderDefault.TabIndex = 2;
+            this.lblDestinationFolderDefault.Text = "Destination folder";
             // 
             // tbDestinationFolderDefault
             // 
-            resources.ApplyResources(this.tbDestinationFolderDefault, "tbDestinationFolderDefault");
+            this.tbDestinationFolderDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbDestinationFolderDefault.Location = new System.Drawing.Point(162, 5);
             this.tbDestinationFolderDefault.Name = "tbDestinationFolderDefault";
+            this.tbDestinationFolderDefault.Size = new System.Drawing.Size(364, 22);
+            this.tbDestinationFolderDefault.TabIndex = 5;
             // 
             // btnApplyDefault
             // 
-            resources.ApplyResources(this.btnApplyDefault, "btnApplyDefault");
+            this.btnApplyDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnApplyDefault.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnApplyDefault.Location = new System.Drawing.Point(485, 140);
             this.btnApplyDefault.Name = "btnApplyDefault";
+            this.btnApplyDefault.Size = new System.Drawing.Size(75, 25);
+            this.btnApplyDefault.TabIndex = 5;
+            this.btnApplyDefault.Text = "&Apply";
             this.btnApplyDefault.UseVisualStyleBackColor = true;
             this.btnApplyDefault.Click += new System.EventHandler(this.applySettings);
             // 
             // cmsNotify
             // 
-            resources.ApplyResources(this.cmsNotify, "cmsNotify");
             this.cmsNotify.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stopToolStripMenuItem1,
             this.startToolStripMenuItem1,
@@ -198,57 +257,66 @@
             this.toolStripMenuItem3,
             this.closeToolStripMenuItem});
             this.cmsNotify.Name = "contextMenuStrip1";
+            this.cmsNotify.Size = new System.Drawing.Size(237, 130);
             // 
             // stopToolStripMenuItem1
             // 
-            resources.ApplyResources(this.stopToolStripMenuItem1, "stopToolStripMenuItem1");
             this.stopToolStripMenuItem1.Image = global::prjShotMaster.Properties.Resources.Stop;
             this.stopToolStripMenuItem1.Name = "stopToolStripMenuItem1";
+            this.stopToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
             this.stopToolStripMenuItem1.Tag = "Stop";
+            this.stopToolStripMenuItem1.Text = "Stop";
+            this.stopToolStripMenuItem1.Visible = false;
             this.stopToolStripMenuItem1.Click += new System.EventHandler(this.Stop);
             // 
             // startToolStripMenuItem1
             // 
-            resources.ApplyResources(this.startToolStripMenuItem1, "startToolStripMenuItem1");
             this.startToolStripMenuItem1.Image = global::prjShotMaster.Properties.Resources.Start;
             this.startToolStripMenuItem1.Name = "startToolStripMenuItem1";
+            this.startToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
             this.startToolStripMenuItem1.Tag = "Start";
+            this.startToolStripMenuItem1.Text = "Start";
             this.startToolStripMenuItem1.Click += new System.EventHandler(this.Start);
             // 
             // shotNowToolStripMenuItem1
             // 
-            resources.ApplyResources(this.shotNowToolStripMenuItem1, "shotNowToolStripMenuItem1");
             this.shotNowToolStripMenuItem1.Name = "shotNowToolStripMenuItem1";
+            this.shotNowToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
+            this.shotNowToolStripMenuItem1.Text = "Shot now";
             this.shotNowToolStripMenuItem1.Click += new System.EventHandler(this.Shot);
             // 
             // openDestinationFolderToolStripMenuItem1
             // 
-            resources.ApplyResources(this.openDestinationFolderToolStripMenuItem1, "openDestinationFolderToolStripMenuItem1");
             this.openDestinationFolderToolStripMenuItem1.Name = "openDestinationFolderToolStripMenuItem1";
+            this.openDestinationFolderToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
+            this.openDestinationFolderToolStripMenuItem1.Text = "Open destination folder";
             this.openDestinationFolderToolStripMenuItem1.Click += new System.EventHandler(this.maOpenDestFolder);
             // 
             // toolStripMenuItem3
             // 
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(233, 6);
             // 
             // closeToolStripMenuItem
             // 
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.closeToolStripMenuItem.Text = "Exit";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.maExitApp);
             // 
             // msMainMenu
             // 
-            resources.ApplyResources(this.msMainMenu, "msMainMenu");
             this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiFile,
             this.helpToolStripMenuItem});
+            this.msMainMenu.Location = new System.Drawing.Point(0, 0);
             this.msMainMenu.Name = "msMainMenu";
+            this.msMainMenu.Size = new System.Drawing.Size(578, 28);
+            this.msMainMenu.TabIndex = 2;
+            this.msMainMenu.Text = "menuStrip1";
             // 
             // tsmiFile
             // 
-            resources.ApplyResources(this.tsmiFile, "tsmiFile");
             this.tsmiFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stopToolStripMenuItem,
             this.startToolStripMenuItem,
@@ -257,68 +325,75 @@
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.tsmiFile.Name = "tsmiFile";
+            this.tsmiFile.Size = new System.Drawing.Size(44, 24);
+            this.tsmiFile.Text = "&File";
             // 
             // stopToolStripMenuItem
             // 
-            resources.ApplyResources(this.stopToolStripMenuItem, "stopToolStripMenuItem");
             this.stopToolStripMenuItem.Image = global::prjShotMaster.Properties.Resources.Stop;
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.stopToolStripMenuItem.Tag = "Stop";
+            this.stopToolStripMenuItem.Text = "Stop";
+            this.stopToolStripMenuItem.Visible = false;
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.Stop);
             // 
             // startToolStripMenuItem
             // 
-            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
             this.startToolStripMenuItem.Image = global::prjShotMaster.Properties.Resources.Start;
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.startToolStripMenuItem.Tag = "Start";
+            this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.Start);
             // 
             // shotNowToolStripMenuItem
             // 
-            resources.ApplyResources(this.shotNowToolStripMenuItem, "shotNowToolStripMenuItem");
             this.shotNowToolStripMenuItem.Name = "shotNowToolStripMenuItem";
+            this.shotNowToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.shotNowToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.shotNowToolStripMenuItem.Text = "Shot now";
             this.shotNowToolStripMenuItem.Click += new System.EventHandler(this.Shot);
             // 
             // openDestinationFolderToolStripMenuItem
             // 
-            resources.ApplyResources(this.openDestinationFolderToolStripMenuItem, "openDestinationFolderToolStripMenuItem");
             this.openDestinationFolderToolStripMenuItem.Name = "openDestinationFolderToolStripMenuItem";
+            this.openDestinationFolderToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.openDestinationFolderToolStripMenuItem.Text = "Open destination folder";
             this.openDestinationFolderToolStripMenuItem.Click += new System.EventHandler(this.maOpenDestFolder);
             // 
             // toolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(233, 6);
             // 
             // exitToolStripMenuItem
             // 
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.maExitApp);
             // 
             // helpToolStripMenuItem
             // 
-            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
+            this.aboutToolStripMenuItem.Text = "About…";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.maShowAboutForm);
             // 
             // ntfIcn
             // 
-            resources.ApplyResources(this.ntfIcn, "ntfIcn");
             this.ntfIcn.ContextMenuStrip = this.cmsNotify;
+            this.ntfIcn.Icon = ((System.Drawing.Icon)(resources.GetObject("ntfIcn.Icon")));
             this.ntfIcn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ntfIcn_MouseClick);
-            // 
-            // fbd
-            // 
-            resources.ApplyResources(this.fbd, "fbd");
             // 
             // tmrDefault
             // 
@@ -331,61 +406,76 @@
             // 
             // ss
             // 
-            resources.ApplyResources(this.ss, "ss");
             this.ss.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslblCountdown});
+            this.ss.Location = new System.Drawing.Point(0, 232);
             this.ss.Name = "ss";
+            this.ss.Size = new System.Drawing.Size(578, 22);
             this.ss.SizingGrip = false;
+            this.ss.TabIndex = 6;
+            this.ss.Text = "statusStrip1";
             // 
             // tsslblCountdown
             // 
-            resources.ApplyResources(this.tsslblCountdown, "tsslblCountdown");
             this.tsslblCountdown.Name = "tsslblCountdown";
+            this.tsslblCountdown.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStrip1
             // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnStart,
             this.tsbtnStop,
             this.toolStripSeparator1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(578, 27);
+            this.toolStrip1.TabIndex = 7;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // tsbtnStart
             // 
-            resources.ApplyResources(this.tsbtnStart, "tsbtnStart");
             this.tsbtnStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsbtnStart.ForeColor = System.Drawing.Color.Green;
             this.tsbtnStart.Name = "tsbtnStart";
+            this.tsbtnStart.Size = new System.Drawing.Size(26, 24);
             this.tsbtnStart.Tag = "Start";
+            this.tsbtnStart.Text = "▶";
+            this.tsbtnStart.ToolTipText = "Start";
             this.tsbtnStart.Click += new System.EventHandler(this.Start);
             // 
             // tsbtnStop
             // 
-            resources.ApplyResources(this.tsbtnStop, "tsbtnStop");
             this.tsbtnStop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsbtnStop.ForeColor = System.Drawing.Color.Red;
             this.tsbtnStop.Name = "tsbtnStop";
+            this.tsbtnStop.Size = new System.Drawing.Size(26, 24);
             this.tsbtnStop.Tag = "Stop";
+            this.tsbtnStop.Text = "■";
+            this.tsbtnStop.ToolTipText = "Stop";
+            this.tsbtnStop.Visible = false;
             this.tsbtnStop.Click += new System.EventHandler(this.Stop);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // frmMain
             // 
             this.AcceptButton = this.btnApplyDefault;
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(578, 254);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.ss);
             this.Controls.Add(this.msMainMenu);
             this.Controls.Add(this.pnlSettingsDefault);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Settings";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.pnlSettingsDefault.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

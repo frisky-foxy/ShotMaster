@@ -30,7 +30,7 @@ namespace prjShotMaster
             set
             {
                 _state_text_icon = value;
-                ntfIcn.Text = String.Format("({0} {1}) {2}", _state_text_icon, countdown_default.ToString(), ntfIcnText);
+                ntfIcn.Text = String.Format("{0}\n{1} {2}", ntfIcnText, state_text_icon, tsslblCountdown.Text);
             }
         }
 

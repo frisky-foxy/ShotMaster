@@ -33,7 +33,7 @@ namespace prjShotMaster
                 _countdown_default = value;
                 TimeSpan t = TimeSpan.FromSeconds(_countdown_default);
                 tsslblCountdown.Text = string.Format("{0:D2}:{1:D2}:{2:D2}", t.Hours, t.Minutes, t.Seconds);
-                ntfIcn.Text = String.Format("({0} {1}) {2}", state_text_icon, _countdown_default.ToString(), ntfIcnText);
+                ntfIcn.Text = String.Format("{0}\n{1} {2}", ntfIcnText, state_text_icon, tsslblCountdown.Text);
             }
         }
         private string ntfIcnText;
